@@ -85,7 +85,7 @@ $custom-theme: mat.define-light-theme((
         text: (
             default: $dark,
             muted: #{$dark}80, // e.g. placeholder
-            on-primary: mat.get-contrast-color-from-palette($custom-primary-palette, 500),
+            on-primary: mat.get-contrast-color-from-palette($custom-primary-palette, contrast),
             on-secondary: $white,
         ),
     )

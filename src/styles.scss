@@ -10,7 +10,8 @@ html, body {
 
 body { 
     margin: 0; 
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: "Inter", serif;
+
 }
 app-root {
     height: 100%;
@@ -18,3 +19,10 @@ app-root {
     flex-direction: column;
     justify-content: space-between;
 }
+.mat-flat-button, .mat-raised-button, .mat-stroked-button {
+    background-color: theme.$green;
+    color: theme.$white;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+  }

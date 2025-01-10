@@ -1,0 +1,38 @@
+@import '../../../../_variables';
+
+.menu {
+    margin: 10px auto;
+    padding: 0;
+    background-color: transparent;
+    max-width: 1320px;
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+        color: $dark;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    &-item:hover {
+        color: #{$dark}90;
+    }
+
+    &-right {
+        display: flex;
+        gap: 100px;
+
+        button img {
+            margin-right: 8px;
+        }
+    }
+
+    &-sections {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+}
+
+.logo {
+    height: 58px;
+}
