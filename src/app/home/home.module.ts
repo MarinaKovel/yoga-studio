@@ -8,6 +8,7 @@ import { ShareModule } from '../share/share.module';
 import { BannerSectionComponent } from './components/banner-section/banner-section.component';
 import { ServicesSectionComponent } from './components/services-section/services-section.component';
 import { SectionTitleComponent } from './components/section-title/section-title.component';
+import { ServiceCardComponent } from './components/service-card/service-card.component';
 
 const routes: Routes = [{
   path: '',
@@ -21,6 +22,7 @@ const routes: Routes = [{
     BannerSectionComponent, 
     ServicesSectionComponent,
     SectionTitleComponent,
+    ServiceCardComponent,
   ],
   imports: [
     CommonModule,

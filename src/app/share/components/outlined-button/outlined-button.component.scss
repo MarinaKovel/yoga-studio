@@ -1,0 +1,11 @@
+@import '../../../../variables';
+
+.mat-mdc-stroked-button {
+    min-height: 38px;
+    min-width: 120px;
+}
+
+.mat-mdc-outlined-button {
+    border-color: $green;
+    border-width: 2px;
+}
