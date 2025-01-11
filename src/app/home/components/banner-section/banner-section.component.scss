@@ -1,0 +1,49 @@
+.banner {
+    min-height: 830px;
+    position: relative;
+
+    &-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        min-height: 830px;
+        object-fit: cover;
+        z-index: -1;
+    
+    }
+
+    &-text {
+        max-width: 1360px;
+        margin: auto;
+        position: relative;
+        top: 133px;
+        
+
+        h1 {
+            font-size: 66px;
+            font-weight: 600;
+            text-transform: uppercase;
+            max-width: 569px;
+            margin: 0 20px 40px;
+        }
+
+        p {
+            max-width: 569px;
+            margin: 0 20px 40px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin: 0 20px;
+
+            button {
+                min-width: 168px;
+                min-height: 50px;
+                border-radius: 6px;
+            }
+        }
+    }
+}
