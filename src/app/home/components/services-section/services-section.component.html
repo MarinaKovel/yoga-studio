@@ -8,7 +8,9 @@
             <button mat-button color="primary">Get Started Today</button>
         </div>
         <div class="service-cards">
-            <app-service-card icon="../../../../assets/spa.svg" title="title" text="text"></app-service-card>
+            <div *ngFor="let card of cards">
+                <app-service-card [icon]="card.icon" [title]="card.title" [text]="card.text"></app-service-card>
+            </div>
         </div>
     </div>
 </section>

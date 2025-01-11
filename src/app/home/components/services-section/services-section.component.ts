@@ -13,5 +13,5 @@ const CARDS_DATA = [
   styleUrl: './services-section.component.scss'
 })
 export class ServicesSectionComponent {
-
+  cards = CARDS_DATA
 }

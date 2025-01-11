@@ -21,6 +21,7 @@ section {
             color: $white;
             height: 420px;
             width: 320px;
+            min-width: 320px;
             border-radius: 25px;
             padding: 35px;
             text-align: center;
@@ -43,6 +44,11 @@ section {
 
         .service-cards {
             margin-top: 21px;
+            margin-left: 48px;
+            display: flex;
+            gap: 48px;
+            overflow-x: scroll;
+            max-height: 460px;
         }
     }
 
@@ -53,4 +59,19 @@ section {
     p {
         max-width: 250px;
     }
+}
+
+.service-cards::-webkit-scrollbar {
+    width: 16px;
+    height: 8px;
+}
+
+.service-cards::-webkit-scrollbar-track {
+    background-color: #{$dark}20;
+    border-radius: 100px;
+}
+
+.service-cards::-webkit-scrollbar-thumb {
+    background-color: $green;
+    border-radius: 100px;
 }
