@@ -1,10 +1,20 @@
 @import '../../../../variables';
 
 article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     height: 376px;
     width: 294px;
     background-color: $light;
     border-radius: 25px;
     padding: 35px;
     margin: 0 48px;
+
+    img {
+        max-width: 80px;
+        max-height: 80px;
+    }
 }
