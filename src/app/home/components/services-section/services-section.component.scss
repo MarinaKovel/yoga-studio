@@ -1,0 +1,56 @@
+@import '../../../../variables';
+
+:host {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    max-width: 1320px;
+    width: 100%;
+    color: $dark;
+    margin-top: 106px;
+
+    .main-content {
+        display: flex;
+        margin-top: 35px;
+        min-height: 620px;
+
+        .start-card {
+            background-color: $green;
+            color: $white;
+            height: 420px;
+            width: 320px;
+            border-radius: 25px;
+            padding: 35px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+
+            -webkit-box-shadow: -43px 49px 80px 0px rgba(34, 60, 80, 0.26);
+            -moz-box-shadow: -43px 49px 80px 0px rgba(34, 60, 80, 0.26);
+            box-shadow: -43px 49px 80px 0px rgba(34, 60, 80, 0.26);
+
+            .mat-mdc-button {
+                background-color: $white;
+                min-width: 185px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+h3 {
+    font-size: 24px;
+    max-width: 247px;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    max-width: 250px;
+    line-height: 28px;
+}

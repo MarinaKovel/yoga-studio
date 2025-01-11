@@ -6,6 +6,8 @@ import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { ShareModule } from '../share/share.module';
 import { BannerSectionComponent } from './components/banner-section/banner-section.component';
+import { ServicesSectionComponent } from './components/services-section/services-section.component';
+import { SectionTitleComponent } from './components/section-title/section-title.component';
 
 const routes: Routes = [{
   path: '',
@@ -14,7 +16,12 @@ const routes: Routes = [{
 
 
 @NgModule({
-  declarations: [HomeComponent, BannerSectionComponent],
+  declarations: [
+    HomeComponent, 
+    BannerSectionComponent, 
+    ServicesSectionComponent,
+    SectionTitleComponent,
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
