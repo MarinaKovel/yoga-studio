@@ -1,0 +1,54 @@
+@import '../../../../variables';
+
+:host {
+    display: flex;
+    justify-content: center;
+    background-color: $bg-dark;
+}
+
+section {
+    max-width: 1320px;
+    width: 100%;
+    color: $dark;
+    margin-top: 106px;
+
+    mat-tab-group {
+        margin-top: 48px;
+        margin-bottom: 96px;
+    }
+}
+
+
+::ng-deep {
+    .mat-mdc-tab-labels {
+        gap: 48px;
+    }
+
+    .mdc-tab {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+    .mat-mdc-tab.mdc-tab {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .mat-mdc-tab.mdc-tab--active {
+        border: 2px solid $dark;
+        border-radius: 15px;
+    }
+
+    .mat-mdc-tab.mdc-tab--active:focus .mdc-tab-indicator__content--underline {
+        display: none;
+    }
+}
+
+.mat-mdc-tab-group, .mat-mdc-tab-nav-bar{
+    --mdc-tab-indicator-active-indicator-color: transparent;
+    --mat-tab-header-active-ripple-color: transparent;
+    --mat-tab-header-inactive-ripple-color: transparent;
+    --mat-tab-header-active-label-text-color : $dark;
+    --mat-tab-header-inactive-label-text-color: $dark;
+    --mat-tab-header-active-focus-label-text-color: $dark;
+}

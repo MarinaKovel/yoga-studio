@@ -9,6 +9,8 @@ import { BannerSectionComponent } from './components/banner-section/banner-secti
 import { ServicesSectionComponent } from './components/services-section/services-section.component';
 import { SectionTitleComponent } from './components/section-title/section-title.component';
 import { ServiceCardComponent } from './components/service-card/service-card.component';
+import { ClassesSectionComponent } from './components/classes-section/classes-section.component';
+import { MatTabsModule } from '@angular/material/tabs'
 
 const routes: Routes = [{
   path: '',
@@ -21,6 +23,7 @@ const routes: Routes = [{
     HomeComponent, 
     BannerSectionComponent, 
     ServicesSectionComponent,
+    ClassesSectionComponent,
     SectionTitleComponent,
     ServiceCardComponent,
   ],
@@ -29,7 +32,8 @@ const routes: Routes = [{
     RouterModule.forChild(routes),
     MatButton,
     MatIcon,
-    ShareModule
+    ShareModule,
+    MatTabsModule
   ]
 })
 export class HomeModule { }
