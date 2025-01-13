@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { MatButton } from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { ShareModule } from '../share/share.module';
 import { BannerSectionComponent } from './components/banner-section/banner-section.component';
@@ -14,6 +14,8 @@ import { MatTabsModule } from '@angular/material/tabs'
 import { ClassesTabComponent } from './components/classes-tab/classes-tab.component';
 import { TeamSectionComponent } from './components/team-section/team-section.component';
 import { BottomSectionComponent } from './components/bottom-section/bottom-section.component';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const routes: Routes = [{
   path: '',
@@ -36,10 +38,12 @@ const routes: Routes = [{
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    MatButton,
+    MatButtonModule,
     MatIcon,
     ShareModule,
-    MatTabsModule
-  ]
+    MatTabsModule,
+    OverlayModule,
+    MatDialogModule
+  ],
 })
 export class HomeModule { }

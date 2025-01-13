@@ -5,7 +5,7 @@
         <div class="start-card">
             <h3>Get Started With Your Free Trial</h3>
             <p>Explore yoga at our serene studio with a complimentary session. Meet our instructors and discover the benefits</p>
-            <button mat-button color="primary">Get Started Today</button>
+            <button mat-button color="primary" (click)="openDialog()">Get Started Today</button>
         </div>
         <div class="service-cards">
             <div *ngFor="let card of cards">

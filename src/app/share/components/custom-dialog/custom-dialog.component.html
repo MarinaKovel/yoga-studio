@@ -1,0 +1,12 @@
+<div class="dialog-header">
+    <h2 mat-dialog-title>{{ data.title }}</h2>
+    <button mat-button color="text" (click)="onNoClick()">&#10005;</button>
+</div>
+
+<mat-dialog-content>
+    <div [innerHTML]="data.content"></div>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-flat-button color="primary" [mat-dialog-close]="data.buttonFunction()" cdkFocusInitial>{{ data.buttonLabel }}</button>
+    <app-contact-button [mat-dialog-close]="" cdkFocusInitial></app-contact-button>
+</mat-dialog-actions>

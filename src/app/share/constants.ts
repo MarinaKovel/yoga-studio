@@ -1,4 +1,8 @@
-export const CLASSES_DATA = [
+import { DialogData } from "../interfaces/dialog-data.interface"
+import { Trainer } from "../interfaces/trainer.interface"
+import { YogaClasses } from "../interfaces/yoga-classes.interface"
+
+export const CLASSES_DATA: YogaClasses[] = [
     {
       name: 'Beginners Yoga',
       image: '../../../../assets/class-beginners.png',
@@ -55,7 +59,14 @@ export const CLASSES_DATA = [
     }
   ]
 
-  export const TRAINERS = [
+  export const CARDS_DATA = [
+    { icon: '../../../../assets/spa.svg', title: 'Spa area', text: 'Indulge in a world of relaxation and rejuvenation with our exceptional spa services. At our LA center'},
+    { icon: '../../../../assets/changing-room.svg', title: 'Changing Room', text: 'Indulge in a world of relaxation and rejuvenation with our exceptional spa services. At our LA center'},
+    { icon: '../../../../assets/free-lesson.svg', title: 'Free Lessons', text: 'Indulge in a world of relaxation and rejuvenation with our exceptional spa services. At our LA center'},
+    { icon: '../../../../assets/rug.svg', title: 'Free Rug', text: 'Indulge in a world of relaxation and rejuvenation with our exceptional spa services. At our LA center'},
+  ]
+
+  export const TRAINERS: Trainer[] = [
     { name: '', image: '../../../../assets/trainer1.png' },
     { name: '', image: '../../../../assets/trainer2.png' },
     { name: '', image: '../../../../assets/trainer3.png' },
@@ -63,3 +74,12 @@ export const CLASSES_DATA = [
     { name: '', image: '../../../../assets/trainer5.png' },
     { name: '', image: '../../../../assets/trainer6.png' },
   ]
+
+  export const dialogContent = {
+    bookSesson: {
+      title: 'Free 30 Day MemberShip',
+      content: `<p>Enjoy a complimentary 30-day free trial of our yoga and fitness classes. Experience our serene studio, expert trainers, and diverse class offerings without any commitment. Discover the benefits of yoga and transform your well-being with us.</p>`,
+      buttonLabel: 'Book A Session',
+      buttonFunction: () => {}
+    },
+  }

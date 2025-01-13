@@ -1,17 +1,27 @@
-import { Component } from '@angular/core';
-
-const CARDS_DATA = [
-  { icon: '../../../../assets/spa.svg', title: 'Spa area', text: 'Indulge in a world of relaxation and rejuvenation with our exceptional spa services. At our LA center'},
-  { icon: '../../../../assets/changing-room.svg', title: 'Changing Room', text: 'Indulge in a world of relaxation and rejuvenation with our exceptional spa services. At our LA center'},
-  { icon: '../../../../assets/free-lesson.svg', title: 'Free Lessons', text: 'Indulge in a world of relaxation and rejuvenation with our exceptional spa services. At our LA center'},
-  { icon: '../../../../assets/rug.svg', title: 'Free Rug', text: 'Indulge in a world of relaxation and rejuvenation with our exceptional spa services. At our LA center'},
-]
-
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { CustomDialogComponent } from '../../../share/components/custom-dialog/custom-dialog.component';
+import { CARDS_DATA, dialogContent } from '../../../share/constants';
 @Component({
   selector: 'app-services-section',
   templateUrl: './services-section.component.html',
-  styleUrl: './services-section.component.scss'
+  styleUrl: './services-section.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ServicesSectionComponent {
-  cards = CARDS_DATA
+  cards = CARDS_DATA;
+
+  constructor(private dialog: MatDialog) {}
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(CustomDialogComponent, {
+      maxWidth: '1200px',
+      minWidth: '400px',
+      data: dialogContent.bookSesson
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('Dialog was closed. Result:', result);
+    });
+  }
 }

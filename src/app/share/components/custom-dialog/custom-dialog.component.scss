@@ -1,0 +1,64 @@
+@import '../../../../variables';
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        font-size: 52px;
+        line-height: 52px;
+        font-family: "Inter", serif;
+        max-width: 80%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        color: $dark;
+    }
+
+    button {
+        border-radius: 25px;
+        min-width: 20px;
+        font-size: 20px;
+        margin: 25px;
+        color: $dark;
+    }
+}
+
+::ng-deep {
+    .cdk-overlay-container {
+         z-index: 10;
+         position: fixed;
+         top: 20%;
+         left: 30%;
+         right: 30%;
+    }
+ 
+    .cdk-overlay-backdrop {
+         background-color: rgba(0, 0, 0, 0.7);
+         height: 100%;
+         width: 100vw;
+         position: fixed;
+         top: 0;
+         left: 0;
+         overflow: hidden;
+    }
+
+    .cdk-global-overlay-wrapper {
+        border-radius: 25px;
+    }
+
+    .mat-mdc-dialog-container {
+        --mdc-dialog-container-shape: 25px;
+    }
+
+    .mat-mdc-dialog-container-with-actions .mat-mdc-dialog-content {
+        padding: 0 25px;
+        color: $dark;
+        font-family: "Inter", serif;
+    }
+
+    .mat-mdc-dialog-actions {
+        padding: 25px;
+        display: flex;
+        gap: 10px;
+    }
+ }
