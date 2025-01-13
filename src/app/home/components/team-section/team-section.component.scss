@@ -1,0 +1,30 @@
+@import '../../../../variables';
+
+:host {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    max-width: 1320px;
+    width: 100%;
+    color: $dark;
+    margin-top: 106px;
+
+    p {
+        margin-top: 35px;
+        margin-bottom: 48px;
+    }
+
+    .action {
+        display: flex;
+        justify-content: center;
+    }
+
+    .trainers-container {
+        display: flex;
+        gap: 48px;
+        flex-wrap: wrap;
+        margin-bottom: 48px;
+    }
+}

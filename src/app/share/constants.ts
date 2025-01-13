@@ -54,3 +54,12 @@ export const CLASSES_DATA = [
       ]
     }
   ]
+
+  export const TRAINERS = [
+    { name: '', image: '../../../../assets/trainer1.png' },
+    { name: '', image: '../../../../assets/trainer2.png' },
+    { name: '', image: '../../../../assets/trainer3.png' },
+    { name: '', image: '../../../../assets/trainer4.png' },
+    { name: '', image: '../../../../assets/trainer5.png' },
+    { name: '', image: '../../../../assets/trainer6.png' },
+  ]

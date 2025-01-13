@@ -1,0 +1,14 @@
+<section>
+    <app-section-title title="Our Great Team" subtitle="Sub heading to explain more"></app-section-title>
+
+    <p>Meet our team of expert trainers, dedicated to guiding you on your wellness journey. With extensive experience and a deep understanding of yoga and fitness, our trainers offer personalized attention to help you reach your goals. They are committed to creating a safe and supportive environment, ensuring you feel confident and motivated. Join us to experience the passion and expertise of our trainers. Transform your practice and achieve your wellness aspirations with us.</p>
+
+    <div class="trainers-container">
+        <div *ngFor="let trainer of trainers">
+            <img [src]="trainer.image" [alt]="trainer.name" class="trainer-img" />
+        </div>
+    </div>
+    <div class="action">
+        <app-outlined-button text="Learn More About Us"></app-outlined-button>
+    </div>
+</section>
