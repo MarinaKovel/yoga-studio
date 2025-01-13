@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CLASSES_DATA } from '../../../share/constants';
 
 @Component({
   selector: 'app-classes-section',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './classes-section.component.scss',
 })
 export class ClassesSectionComponent {
-
+ classesData = CLASSES_DATA
 }

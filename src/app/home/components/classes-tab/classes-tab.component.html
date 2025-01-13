@@ -1,0 +1,19 @@
+
+<div class="container">
+    <img [src]="data.image" [alt]="data.name" class="container-img" />
+    <div>
+        <h3>{{data.name}}</h3>
+        <p>{{data.description}}</p>
+        <div class="items">
+            <div *ngFor="let item of data.pros">
+                <div class="item">
+                    <p class="item-number">{{item.id}}</p>
+                    <h3>{{item.name}}</h3>
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<button mat-flat-button color="primary">Get Your Free Trial</button>

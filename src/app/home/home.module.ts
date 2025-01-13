@@ -11,6 +11,7 @@ import { SectionTitleComponent } from './components/section-title/section-title.
 import { ServiceCardComponent } from './components/service-card/service-card.component';
 import { ClassesSectionComponent } from './components/classes-section/classes-section.component';
 import { MatTabsModule } from '@angular/material/tabs'
+import { ClassesTabComponent } from './components/classes-tab/classes-tab.component';
 
 const routes: Routes = [{
   path: '',
@@ -26,6 +27,7 @@ const routes: Routes = [{
     ClassesSectionComponent,
     SectionTitleComponent,
     ServiceCardComponent,
+    ClassesTabComponent
   ],
   imports: [
     CommonModule,
