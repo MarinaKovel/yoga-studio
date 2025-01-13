@@ -13,6 +13,7 @@ import { ClassesSectionComponent } from './components/classes-section/classes-se
 import { MatTabsModule } from '@angular/material/tabs'
 import { ClassesTabComponent } from './components/classes-tab/classes-tab.component';
 import { TeamSectionComponent } from './components/team-section/team-section.component';
+import { BottomSectionComponent } from './components/bottom-section/bottom-section.component';
 
 const routes: Routes = [{
   path: '',
@@ -29,7 +30,8 @@ const routes: Routes = [{
     SectionTitleComponent,
     ServiceCardComponent,
     ClassesTabComponent,
-    TeamSectionComponent
+    TeamSectionComponent,
+    BottomSectionComponent
   ],
   imports: [
     CommonModule,
