@@ -16,12 +16,21 @@
         align-items: center;
         padding-bottom: 25px;
         border-bottom: 1px solid $grey;
+
+        &-tablet {
+            justify-content: center;
+        }
     }
 
     &-bottom {
         display: flex;
         justify-content: space-between;
         margin-top: 25px;
+
+        &-tablet {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &-social {
