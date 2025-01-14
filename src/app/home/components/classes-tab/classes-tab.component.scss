@@ -8,12 +8,27 @@
     overflow: hidden !important;
     gap: 48px;
 
+    &-mobile {
+        flex-direction: column-reverse;
+        padding: 25px;
+    }
+
     &-img {
         width: fit-content;
         height: fit-content;
         object-fit: contain;
         max-width: 637px;
         border-radius: 15px;
+
+        &-tablet {
+            max-width: 40%;
+            margin-left: 15px;
+        }
+
+        &-mobile {
+            max-width: 100%;
+            margin-left: 0;
+        }
     }
 
     h3 {

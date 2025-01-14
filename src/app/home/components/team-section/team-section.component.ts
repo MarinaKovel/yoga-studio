@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Trainer } from '../../../interfaces/trainer.interface';
 import { TRAINERS } from '../../../share/constants';
+import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-team-section',
@@ -9,4 +10,20 @@ import { TRAINERS } from '../../../share/constants';
 })
 export class TeamSectionComponent {
   trainers: Trainer[] = TRAINERS;
+
+  isTablet = false;
+  
+    constructor(private breakpointService: BreakpointObserver) {}
+  
+    ngOnInit() {
+      this.breakpointService
+        .observe([Breakpoints.Medium, Breakpoints.Small, Breakpoints.XSmall])
+        .subscribe((result) => {
+          this.isTablet = false;
+          
+          if (result.matches) {
+            this.isTablet = true;
+          }
+        })
+    }
 }

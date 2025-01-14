@@ -6,7 +6,7 @@
 }
 
 section {
-    max-width: 1320px;
+    //max-width: 1320px;
     width: 100%;
     color: $dark;
     margin-top: 106px;
@@ -24,8 +24,17 @@ section {
 
     .trainers-container {
         display: flex;
+        justify-content: center;
         gap: 48px;
         flex-wrap: wrap;
         margin-bottom: 48px;
+
+        div img {
+                max-width: 80vw;
+        }
     }
+}
+
+.tablet {
+    padding: 15px;
 }

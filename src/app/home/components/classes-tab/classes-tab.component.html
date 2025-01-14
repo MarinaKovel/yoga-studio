@@ -1,6 +1,6 @@
 
-<div class="container">
-    <img [src]="data.image" [alt]="data.name" class="container-img" />
+<div class="container" [ngClass]="{'container-mobile': isMobile}">
+    <img [src]="data.image" [alt]="data.name" class="container-img" [ngClass]="{'container-img-tablet': isTablet, 'container-img-mobile': isMobile}" />
     <div>
         <h3>{{data.name}}</h3>
         <p>{{data.description}}</p>

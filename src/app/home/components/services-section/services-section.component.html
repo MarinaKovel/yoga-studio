@@ -1,13 +1,13 @@
 <section>
     <app-section-title title="Our Services" subtitle="Sub heading to explain more"></app-section-title>
 
-    <div class="main-content">
-        <div class="start-card">
+    <div class="main-content" [ngClass]="{'main-content-tablet': isTablet, 'main-content-mobile': isMobile}">
+        <div class="start-card" [ngClass]="{'start-card-tablet': isTablet}">
             <h3>Get Started With Your Free Trial</h3>
             <p>Explore yoga at our serene studio with a complimentary session. Meet our instructors and discover the benefits</p>
             <button mat-button color="primary" (click)="openDialog()">Get Started Today</button>
         </div>
-        <div class="service-cards">
+        <div class="service-cards" [ngClass]="{'service-cards-tablet': isTablet}">
             <div *ngFor="let card of cards">
                 <app-service-card [icon]="card.icon" [title]="card.title" [text]="card.text"></app-service-card>
             </div>

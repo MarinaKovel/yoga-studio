@@ -12,7 +12,6 @@
         min-height: 830px;
         object-fit: cover;
         z-index: -1;
-    
     }
 
     &-text {
@@ -20,7 +19,6 @@
         margin: auto;
         position: relative;
         top: 133px;
-        
 
         h1 {
             font-size: 66px;
@@ -28,6 +26,12 @@
             text-transform: uppercase;
             max-width: 569px;
             margin: 0 20px 40px;
+        }
+
+        .header {
+            &-tablet {
+                font-size: 36px;
+            }
         }
 
         p {

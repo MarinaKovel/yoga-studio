@@ -16,6 +16,16 @@ section {
         margin-top: 35px;
         min-height: 620px;
 
+        &-tablet {
+            min-height: 420px;
+        }
+
+        &-mobile {
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            min-height: 720px;
+        }
+
         .start-card {
             background-color: $green;
             color: $white;
@@ -40,6 +50,13 @@ section {
                 min-width: 185px;
                 font-weight: 600;
             }
+
+            &-tablet {
+                height: 280px;
+                width: 212px;
+                min-width: 212px;
+                margin-left: 25px;
+            }
         }
 
         .service-cards {
@@ -49,6 +66,10 @@ section {
             gap: 48px;
             overflow-x: scroll;
             max-height: 460px;
+
+            &-tablet {
+                max-height: 320px;
+            }
         }
     }
 

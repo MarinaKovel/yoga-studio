@@ -15,5 +15,17 @@ article {
     img {
         max-width: 80px;
         max-height: 80px;
-    }
+    } 
 }
+
+.tablet {
+        height: 251px;
+        width: 196px;
+        padding: 25px;
+        gap: 10px;
+
+        img {
+            max-width: 25px;
+            max-height: 25px;
+        }
+    }
