@@ -10,6 +10,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { MatInput } from '@angular/material/input';
 import { MatButton } from '@angular/material/button';
 import { MatSelect, MatOption } from '@angular/material/select';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [{
   path: '',
@@ -29,7 +30,8 @@ const routes: Routes = [{
     MatInput,
     MatButton,
     MatSelect,
-    MatOption
+    MatOption,
+    HttpClientModule
   ]
 })
 export class ContactModule { }

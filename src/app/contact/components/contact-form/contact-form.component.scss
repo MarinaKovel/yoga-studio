@@ -4,8 +4,12 @@
 
 .full-width {
     width: 100%;
-  }
+}
 
-  .mdc-button {
+.mdc-button {
     margin-top: 25px;
-  }
+}
+
+textarea {
+    max-height: 60px;
+}
