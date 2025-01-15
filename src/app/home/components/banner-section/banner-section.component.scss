@@ -1,3 +1,5 @@
+@import '../../../../_variables';
+
 .banner {
     min-height: 830px;
     overflow: hidden;
@@ -22,6 +24,7 @@
 
         h1 {
             font-size: 66px;
+            color: $dark;
             font-weight: 600;
             text-transform: uppercase;
             max-width: 569px;

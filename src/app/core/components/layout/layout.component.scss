@@ -70,3 +70,7 @@ button img {
 .menu-item:hover {
     color: #{$dark}80;
 }
+
+.mat-drawer-content {
+    min-height: 64px;
+}
