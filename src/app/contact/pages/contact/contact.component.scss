@@ -18,12 +18,16 @@
 
     img {
         border-radius: 25px;
+        margin-left: auto;
+        margin-right: 48px;
     }
 }
 
 .grid-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 93vw;
+    min-height: 120px;
+    overflow: hidden;
 }
 
 .content-tile {
@@ -38,6 +42,7 @@
     border-bottom-left-radius: 0;
     border-top-right-radius: 0;
     border-top-left-radius: 25px;
+    height: 800px;
 }
 
 .next-border {
@@ -52,6 +57,10 @@ section {
     .contacts-block {
         margin-bottom: 35px;
         color: $dark;
+
+        a {
+            color: $dark
+        }
     }
 
     .footer-social {
