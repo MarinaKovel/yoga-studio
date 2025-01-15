@@ -1,0 +1,72 @@
+@import '../../../../_variables';
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    position: absolute;
+    z-index: 10;
+    background-color: transparent;
+}
+
+button img {
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.icon-button {
+
+    height: 36px;
+    width: fit-content;
+
+    mat-icon {
+        margin-right: 0;
+    }
+}
+
+.header-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-container {
+    display: flex;
+    gap: 15px;
+}
+
+.logo {
+    height: 38px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &-tablet {
+        height: 25px;
+    }
+}
+
+.menu-sections {
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.menu-sections-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 35px;
+}
+
+.menu-item {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: $dark;
+
+    &-tablet {
+        font-size: 24px;
+    }
+}
+
+.menu-item:hover {
+    color: #{$dark}80;
+}

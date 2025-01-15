@@ -1,0 +1,34 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="over">
+        <nav class="menu-sections-mobile">
+            <a routerLink="home" class="menu-item">Home</a>
+            <a routerLink="" class="menu-item">Services</a>
+            <a routerLink="" class="menu-item">Our Facility</a>
+            <a routerLink="about" class="menu-item">About</a>
+            <a routerLink="" class="menu-item">Contact</a>
+        </nav>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar class="header-mobile">
+            <div class="left-container">
+                <button mat-icon-button mat-flat-button *ngIf="isTablet" color="primary" class="icon-button" (click)="sidenav.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <img src="../../../../assets/logo.svg" alt="Logo" class="logo" [ngClass]="{'logo-tablet': isTablet}" />
+            </div>
+            <nav *ngIf="!isTablet" class="menu-sections">
+                <a routerLink="home" class="menu-item" [ngClass]="{'logo-tablet': isTablet}">Home</a>
+                <a routerLink="" class="menu-item" [ngClass]="{'logo-tablet': isTablet}">Services</a>
+                <a routerLink="" class="menu-item" [ngClass]="{'logo-tablet': isTablet}">Our Facility</a>
+                <a routerLink="about" class="menu-item" [ngClass]="{'logo-tablet': isTablet}">About</a>
+                <a routerLink="" class="menu-item" [ngClass]="{'logo-tablet': isTablet}">Contact</a>
+            </nav>
+            <button mat-flat-button color="primary"><img src="../../../../assets/cart.svg" alt="Shop" />Shop Now</button>
+        </mat-toolbar>
+
+        <main>
+            <router-outlet />
+        </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>
