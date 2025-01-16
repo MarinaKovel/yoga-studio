@@ -1,6 +1,6 @@
-import { Component, ElementRef, inject, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { FetchDataService } from '../../../share/services/fetch-data.service';
-import { MatSnackBar, MatSnackBarRef } from '@angular/material/snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-about',
@@ -12,9 +12,6 @@ export class AboutComponent {
   page: number = 36;
   maxPage: number = 0;
   isLoading: boolean = true;
-  //snackBarRef = inject(MatSnackBarRef);
-
-  
 
   @ViewChild('observeScroll', { static: true }) observeScroll!: ElementRef;
   private intersectionObserver!: IntersectionObserver;
@@ -23,8 +20,6 @@ export class AboutComponent {
   }
 
   ngOnInit() {
-    console.log(this.isLoading);
-    
     this.initIntersectionObserver();
     this.loadData();
   }

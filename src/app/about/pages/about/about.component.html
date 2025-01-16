@@ -1,11 +1,16 @@
 <section>
     <h1>{{ 'Our Team' | uppercase }} </h1>
     <p>Data from the free API is used</p>
-    <div *ngFor="let item of data">
+    <div *ngFor="let item of data else emptyTemplate">
         <img [src]="item.image" alt="" class="member" />
         <p>{{item.name}}</p>
     </div>
 </section>
+
 <div #observeScroll class="loader">
     <mat-progress-bar mode="indeterminate" color="primary" [ngClass]="{'hide': !isLoading}"></mat-progress-bar>
 </div>
+
+<ng-template #emptyTemplate>
+    <p>No results. Try to reload the page please.</p>
+</ng-template>
