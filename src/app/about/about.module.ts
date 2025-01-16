@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 const routes: Routes = [{
   path: '',
@@ -13,6 +14,7 @@ const routes: Routes = [{
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
+    MatProgressBarModule
   ]
 })
 export class AboutModule { }

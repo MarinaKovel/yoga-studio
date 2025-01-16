@@ -1,0 +1,55 @@
+@import '../../../../_variables';
+
+:host {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding-top: 64px;
+    padding-left: 48px;
+    padding-right: 48px;
+    max-width: 1320px;
+    color: $dark;
+
+    h1 {
+        width: 100%;
+        font-size: 66px;
+        text-align: center;
+        padding: 25px;
+        text-transform: uppercase;
+    }
+
+    p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.member {
+    max-height: 200px;
+    border-radius: 25px;
+}
+
+.loader {
+    height: 70px;
+    width: 300px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+::ng-deep {
+    .mat-drawer-container {
+        background-color: $bg-dark;
+    }
+}
