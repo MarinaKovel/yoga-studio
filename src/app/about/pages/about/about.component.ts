@@ -1,5 +1,6 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { FetchDataService } from '../../../share/services/fetch-data.service';
+import { MatSnackBar, MatSnackBarRef } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-about',
@@ -11,12 +12,14 @@ export class AboutComponent {
   page: number = 36;
   maxPage: number = 0;
   isLoading: boolean = true;
+  //snackBarRef = inject(MatSnackBarRef);
+
+  
 
   @ViewChild('observeScroll', { static: true }) observeScroll!: ElementRef;
   private intersectionObserver!: IntersectionObserver;
 
-  constructor(private fetchDataService: FetchDataService) {
-    
+  constructor(private fetchDataService: FetchDataService, public snackBar: MatSnackBar) {
   }
 
   ngOnInit() {
@@ -59,6 +62,8 @@ export class AboutComponent {
       },
       (error) => {
         console.error('Error fetching data:', error);
+        this.isLoading = false;
+        this.openSnackBar()
       }
     );
     this.page++
@@ -71,5 +76,11 @@ export class AboutComponent {
     if (this.intersectionObserver) {
       this.intersectionObserver.disconnect();
     }
+  }
+
+  openSnackBar() {
+    this.snackBar.open('Fetching error', 'X', {
+      duration: 1500,
+    });
   }
 }

@@ -51,4 +51,15 @@ section {
     .mat-drawer-container {
         background-color: $bg-dark;
     }
+
+    .cdk-overlay-container {
+        position: fixed;
+        z-index: 15;
+        bottom: 0;
+    }
+
+    .mat-mdc-snack-bar-container .mdc-snackbar__surface {
+        background-color: rgb(167, 70, 70) !important;
+    }
 }
+
