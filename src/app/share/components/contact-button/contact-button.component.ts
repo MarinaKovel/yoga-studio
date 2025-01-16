@@ -3,6 +3,7 @@ import {DomSanitizer} from '@angular/platform-browser';
 import {MatIconRegistry, MatIconModule} from '@angular/material/icon';
 import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact-button',
@@ -17,10 +18,14 @@ import { MatIcon } from '@angular/material/icon';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContactButtonComponent {
-  constructor() {
+  constructor(private router: Router) {
     const iconRegistry = inject(MatIconRegistry);
     const sanitizer = inject(DomSanitizer);
 
     iconRegistry.addSvgIcon('arrowRight', sanitizer.bypassSecurityTrustResourceUrl('../../../../assets/arrowRight.svg'));
+  }
+
+  redirectToContact() {
+    this.router.navigate(['/contact']);
   }
 }

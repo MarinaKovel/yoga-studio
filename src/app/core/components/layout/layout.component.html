@@ -1,11 +1,11 @@
 <mat-sidenav-container>
     <mat-sidenav #sidenav mode="over">
         <nav class="menu-sections-mobile">
-            <a routerLink="home" class="menu-item">Home</a>
-            <a routerLink="" class="menu-item">Services</a>
-            <a routerLink="" class="menu-item">Our Facility</a>
-            <a routerLink="about" class="menu-item">About</a>
-            <a routerLink="contact" class="menu-item">Contact</a>
+            <a routerLink="home" class="menu-item" (click)="sidenav.toggle()">Home</a>
+            <a routerLink="" class="menu-item" (click)="sidenav.toggle()">Services</a>
+            <a routerLink="" class="menu-item" (click)="sidenav.toggle()">Our Facility</a>
+            <a routerLink="about" class="menu-item" (click)="sidenav.toggle()">About</a>
+            <a routerLink="contact" class="menu-item" (click)="sidenav.toggle()">Contact</a>
         </nav>
     </mat-sidenav>
 
