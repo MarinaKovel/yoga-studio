@@ -1,17 +1,18 @@
 <div class="container">
     <mat-grid-list [cols]="cols" rowHeight="4:1" gutterSize="16px" class="grid-container">
-        <mat-grid-tile [colspan]="1" [rowspan]="4">
-            <img src="../../../../assets/contacts.png" alt="Contacts" />
+        <mat-grid-tile [colspan]="1" [rowspan]="imageHeight">
+            <img src="../../../../assets/contacts.png" alt="Contacts" [ngClass]="{'main-img-tablet': isTablet}" />
         </mat-grid-tile>
 
         <mat-grid-tile [colspan]="cols - 1 || 1" [rowspan]="1" class="content-tile">
-            <h1>Contact Us</h1>
+            <h1 [ngClass]="{'header-tablet': isTablet, 'header-mobile': isMobile}">Contact Us</h1>
         </mat-grid-tile>
 
-        <mat-grid-tile [colspan]="1" rowspan="3" class="content-tile side-border">
+        <mat-grid-tile [colspan]="1" [rowspan]="rowspanContacts" class="content-tile side-border">
             <app-contact-form></app-contact-form>
         </mat-grid-tile>
-        <mat-grid-tile [colspan]="1" rowspan="3" class="content-tile next-border">
+
+        <mat-grid-tile [colspan]="1" [rowspan]="rowspanContacts" class="content-tile next-border" [ngClass]="{'next-border-mobile': isMobile}">
             <section>
                 <div class="contacts-block">
                     <h3><strong>Contact</strong></h3>
@@ -22,9 +23,9 @@
                     <p>San Francisco, California</p>
                 </div>
                 <div class="footer-social">
-                    <a href=""><img src="../../../../assets/instagram.svg" alt="Instagram" /></a>
-                    <a href=""><img src="../../../../assets/fb.svg" alt="Facebook" /></a>
-                    <a href=""><img src="../../../../assets/x.svg" alt="X" /></a>
+                    <a href=""><img src="../../../../assets/instagram.svg" alt="Instagram" class="icon" /></a>
+                    <a href=""><img src="../../../../assets/fb.svg" alt="Facebook" class="icon"  /></a>
+                    <a href=""><img src="../../../../assets/x.svg" alt="X" class="icon"  /></a>
                 </div>
             </section>
         </mat-grid-tile>

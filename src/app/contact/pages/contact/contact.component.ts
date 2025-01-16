@@ -7,13 +7,36 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  cols = 3;
+  isTablet = false;
+  isMobile = false;
 
+  cols = 3;
+  imageHeight = 4;
+  rowspanContacts = 4;
+  
   constructor(private breakpointObserver: BreakpointObserver) {}
 
   ngOnInit() {
-    this.breakpointObserver.observe([Breakpoints.Handset, Breakpoints.Tablet]).subscribe(result => {
-      this.cols = result.matches ? 1 : 3;
+    this.breakpointObserver.observe([Breakpoints.Small, Breakpoints.XSmall]).subscribe(result => {
+      this.isTablet = false;
+      this.isMobile = false;
+
+      this.cols = 3;
+      this.rowspanContacts = 4;
+      this.imageHeight = 4;
+
+        if (result.breakpoints[Breakpoints.Small]) {
+          this.isTablet = true;
+          this.imageHeight = 2;
+          this.cols = 1;
+          this.rowspanContacts = 3;
+        }
+
+        if (result.breakpoints[Breakpoints.XSmall]) {
+          this.isTablet = true;
+          this.isMobile = true;
+          this.cols = 1;
+        }
     });
   }
 }
