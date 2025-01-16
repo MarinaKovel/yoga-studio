@@ -5,7 +5,7 @@
         </mat-grid-tile>
 
         <mat-grid-tile [colspan]="cols - 1 || 1" [rowspan]="1" class="content-tile">
-            <h1 [ngClass]="{'header-tablet': isTablet, 'header-mobile': isMobile}">Contact Us</h1>
+            <h1 [ngClass]="{'header-tablet': isTablet, 'header-mobile': isMobile}">{{ 'Contact Us' | uppercase }}</h1>
         </mat-grid-tile>
 
         <mat-grid-tile [colspan]="1" [rowspan]="rowspanContacts" class="content-tile side-border">

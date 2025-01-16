@@ -1,5 +1,5 @@
 <section>
-    <h1>Our Team</h1>
+    <h1>{{ 'Our Team' | uppercase }} </h1>
     <p>Data from the free API is used</p>
     <div *ngFor="let item of data">
         <img [src]="item.image" alt="" class="member" />
