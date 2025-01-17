@@ -9,8 +9,10 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class AboutComponent {
   data: any[] = [];
-  page: number = 36;
-  maxPage: number = 0;
+  page: number = 1;
+  limit: number = 10;
+  allTeam: number = 31;
+  maxPage: number = Math.ceil(this.allTeam / this.limit);
   isLoading: boolean = true;
 
   @ViewChild('observeScroll', { static: true }) observeScroll!: ElementRef;
@@ -49,11 +51,10 @@ export class AboutComponent {
   }
 
   private loadData() {
-    if (!this.maxPage || this.page <= this.maxPage) {
+    if (this.page <= this.maxPage) {
       this.fetchDataService.fetchData(this.page).subscribe(
       (response) => {
-        this.maxPage = response.info.pages;
-        this.data = this.data.concat(response.results)
+        this.data = this.data.concat(response)
       },
       (error) => {
         console.error('Error fetching data:', error);

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class FetchDataService {
 
-  private apiUrl = `https://rickandmortyapi.com/api/character?page=`;
+  private apiUrl = `https://6789fbd1dd587da7ac284cfa.mockapi.io/team?limit=10&page=`;
 
   constructor(private http: HttpClient) {}
 
