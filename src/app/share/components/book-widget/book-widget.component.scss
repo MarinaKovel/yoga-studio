@@ -20,6 +20,7 @@ form {
         flex-wrap: wrap;
         gap: 25px;
         margin-bottom: 25px;
+        border: none;
     }
 
     &-day {
@@ -36,13 +37,17 @@ form {
     gap: 10px;
 }
 
+.mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard {
+    border-left: 3px solid $green;
+}
+
 ::ng-deep {
     .cdk-overlay-container {
          z-index: 10;
          position: absolute;
          top: 240px;
-         left: calc(50% - 133px);
-         right: 30%;
+         left: calc(50% - 315px);
+         right: calc(50% - 315px);
     }
 
     .mat-mdc-unelevated-button>.mat-icon {

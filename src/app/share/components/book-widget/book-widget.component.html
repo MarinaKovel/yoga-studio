@@ -20,20 +20,23 @@
                 </button>
             </div>
         </div>
-        <div class="calendar-days">
+
+        <mat-button-toggle-group [hideSingleSelectionIndicator]="true" name="fontStyle" class="calendar-days">
             @for (day of days; track day) {
-                <div class="calendar-day">
+                <mat-button-toggle [value]="day" class="calendar-day">
                     <p>{{ day | date: "E" }}</p>
                     <p>{{ day | date: "d" }}</p>
-                </div>
+                </mat-button-toggle>
                 }
-        </div>
+        </mat-button-toggle-group>
         <p>Time</p>
-        <div class="calendar-days">
+        <mat-button-toggle-group [hideSingleSelectionIndicator]="true" name="fontStyle" class="calendar-days">
             @for (slot of slots; track slot) {
-                <p class="calendar-day">{{slot}}</p>
+                <mat-button-toggle [value]="slot" class="calendar-day">
+                    <p>{{slot}}</p>
+                </mat-button-toggle>
                 }
-        </div>
+        </mat-button-toggle-group>
     </div>
 
     <button mat-flat-button color="primary" type="submit">Submit</button>

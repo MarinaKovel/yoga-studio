@@ -7,6 +7,7 @@ import { FetchDataService } from '../../services/fetch-data.service';
 import { MatButton } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { MatIcon } from '@angular/material/icon';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 @Component({
   selector: 'app-book-widget',
@@ -18,7 +19,8 @@ import { MatIcon } from '@angular/material/icon';
     ReactiveFormsModule,
     MatButton,
     CommonModule,
-    MatIcon
+    MatIcon,
+    MatButtonToggleModule
   ],
   templateUrl: './book-widget.component.html',
   styleUrl: './book-widget.component.scss'
@@ -34,8 +36,8 @@ export class BookWidgetComponent {
     private fb: FormBuilder,
     private fetchDataService: FetchDataService
   ) {
-      this.form = this.fb.group({ trainer: [''] })
-    }
+    this.form = this.fb.group({ trainer: [''] })
+  }
 
   ngOnInit() {
     this.fetchDataService.fetchData().subscribe(
@@ -54,7 +56,7 @@ export class BookWidgetComponent {
       for (let i = 0; i < 7; i++) {
         const nextDate = new Date(this.today);
         nextDate.setDate(this.today.getDate() + i);
-        this.days.push(nextDate); 
+        this.days.push(nextDate);
       }
     }
   }
