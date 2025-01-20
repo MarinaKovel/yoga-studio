@@ -1,0 +1,40 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+        <mat-label>Choose trainer</mat-label>
+        <mat-select formControlName="trainer">
+            @for (trainer of trainers; track trainer) {
+            <mat-option [value]="trainer.name">{{trainer.name}}</mat-option>
+            }
+        </mat-select>
+    </mat-form-field>
+
+    <div class="calendar">
+        <div class="calendar-header">
+            <h3>{{ today | date: "EEEE, MMMM d" }}</h3>
+            <div class="buttons">
+                <button mat-icon-button mat-flat-button color="text">
+                    <mat-icon>chevron_left</mat-icon>
+                </button>
+                <button mat-icon-button mat-flat-button color="text">
+                    <mat-icon>chevron_right</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="calendar-days">
+            @for (day of days; track day) {
+                <div class="calendar-day">
+                    <p>{{ day | date: "E" }}</p>
+                    <p>{{ day | date: "d" }}</p>
+                </div>
+                }
+        </div>
+        <p>Time</p>
+        <div class="calendar-days">
+            @for (slot of slots; track slot) {
+                <p class="calendar-day">{{slot}}</p>
+                }
+        </div>
+    </div>
+
+    <button mat-flat-button color="primary" type="submit">Submit</button>
+</form>

@@ -52,7 +52,7 @@ export class AboutComponent {
 
   private loadData() {
     if (this.page <= this.maxPage) {
-      this.fetchDataService.fetchData(this.page).subscribe(
+      this.fetchDataService.fetchData(`?limit=10&page=${this.page}`).subscribe(
       (response) => {
         this.data = this.data.concat(response)
       },

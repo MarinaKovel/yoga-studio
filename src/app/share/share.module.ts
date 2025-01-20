@@ -5,6 +5,7 @@ import { OutlinedButtonComponent } from './components/outlined-button/outlined-b
 import { CustomDialogComponent } from './components/custom-dialog/custom-dialog.component';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { MatDialogModule } from '@angular/material/dialog';
+import { BookWidgetComponent } from './components/book-widget/book-widget.component';
 
 @NgModule({
   declarations: [],
@@ -14,8 +15,14 @@ import { MatDialogModule } from '@angular/material/dialog';
     OutlinedButtonComponent,
     CustomDialogComponent,
     OverlayModule,
-    MatDialogModule
+    MatDialogModule,
+    BookWidgetComponent,
   ],
-  exports: [ContactButtonComponent, OutlinedButtonComponent, CustomDialogComponent]
+  exports: [
+    ContactButtonComponent, 
+    OutlinedButtonComponent, 
+    CustomDialogComponent,
+    BookWidgetComponent
+  ]
 })
 export class ShareModule { }

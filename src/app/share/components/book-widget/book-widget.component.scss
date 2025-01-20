@@ -1,0 +1,51 @@
+@import '../../../../variables';
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar {
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 35px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    &-days {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-bottom: 25px;
+    }
+
+    &-day {
+        border: 3px solid $green;
+        border-radius: 25px;
+        padding: 8px 15px;
+        min-width: 34px;
+        text-align: center;
+    }
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+::ng-deep {
+    .cdk-overlay-container {
+         z-index: 10;
+         position: absolute;
+         top: 240px;
+         left: calc(50% - 133px);
+         right: 30%;
+    }
+
+    .mat-mdc-unelevated-button>.mat-icon {
+        margin-right: 0;
+    }
+ }

@@ -5,5 +5,6 @@ export const routes: Routes = [
     { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
     { path: 'about', loadChildren: () => import('./about/about.module').then(m => m.AboutModule) },
     { path: 'contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule) },
+    { path: 'booking', loadChildren: () => import('./booking/booking.module').then(m => m.BookingModule) },
     { path: '**', redirectTo: 'home' },
 ];

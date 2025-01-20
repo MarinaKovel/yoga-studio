@@ -7,6 +7,6 @@
     <div [innerHTML]="data.content"></div>
 </mat-dialog-content>
 <mat-dialog-actions>
-    <button mat-flat-button color="primary" [mat-dialog-close]="data.buttonFunction()" cdkFocusInitial>{{ data.buttonLabel }}</button>
+    <button mat-flat-button color="primary" [mat-dialog-close]="data.buttonFunction()" (click)="book()" cdkFocusInitial>{{ data.buttonLabel }}</button>
     <app-contact-button [mat-dialog-close]="" cdkFocusInitial></app-contact-button>
 </mat-dialog-actions>

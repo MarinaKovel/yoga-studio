@@ -10,6 +10,7 @@ import {
 } from '@angular/material/dialog';
 import { ContactButtonComponent } from '../contact-button/contact-button.component';
 import { DialogData } from '../../../interfaces/dialog-data.interface';
+import { BookService } from '../../services/book.service';
 @Component({
   selector: 'app-custom-dialog',
   standalone: true,
@@ -19,19 +20,24 @@ import { DialogData } from '../../../interfaces/dialog-data.interface';
     MatDialogContent,
     MatDialogActions,
     MatDialogClose,
-    ContactButtonComponent,
+    ContactButtonComponent
   ],
   templateUrl: './custom-dialog.component.html',
   styleUrl: './custom-dialog.component.scss'
 })
 export class CustomDialogComponent {
   constructor(
+    public bookService: BookService,
     public dialogRef: MatDialogRef<CustomDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData
   ) {}
 
   onNoClick(): void {
     this.dialogRef.close();
+  }
+
+  book() {
+    this.bookService.redirectToBooking();
   }
 }
 

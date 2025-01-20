@@ -67,12 +67,12 @@ export const CLASSES_DATA: YogaClasses[] = [
   ]
 
   export const TRAINERS: Trainer[] = [
-    { name: '', image: '../../../../assets/trainer1.png' },
-    { name: '', image: '../../../../assets/trainer2.png' },
-    { name: '', image: '../../../../assets/trainer3.png' },
-    { name: '', image: '../../../../assets/trainer4.png' },
-    { name: '', image: '../../../../assets/trainer5.png' },
-    { name: '', image: '../../../../assets/trainer6.png' },
+    { name: '', avatar: '../../../../assets/trainer1.png', id: '', createdAt: '' },
+    { name: '', avatar: '../../../../assets/trainer2.png', id: '', createdAt: '' },
+    { name: '', avatar: '../../../../assets/trainer3.png', id: '', createdAt: '' },
+    { name: '', avatar: '../../../../assets/trainer4.png', id: '', createdAt: '' },
+    { name: '', avatar: '../../../../assets/trainer5.png', id: '', createdAt: '' },
+    { name: '', avatar: '../../../../assets/trainer6.png', id: '', createdAt: '' },
   ]
 
   export const dialogContent = {

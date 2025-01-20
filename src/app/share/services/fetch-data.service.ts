@@ -7,11 +7,11 @@ import { Observable } from 'rxjs';
 })
 export class FetchDataService {
 
-  private apiUrl = `https://6789fbd1dd587da7ac284cfa.mockapi.io/team?limit=10&page=`;
+  private apiUrl = `https://6789fbd1dd587da7ac284cfa.mockapi.io/team`;
 
   constructor(private http: HttpClient) {}
 
-  fetchData(page: number): Observable<any> {
-    return this.http.get(this.apiUrl + page);
+  fetchData(queryParams: string = ''): Observable<any> {
+    return this.http.get(this.apiUrl + queryParams);
   }
 }

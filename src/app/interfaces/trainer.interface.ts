@@ -1,4 +1,6 @@
 export interface Trainer {
+    id: string;
     name: string;
-    image: string;
+    avatar: string;
+    createdAt: string;
 }
