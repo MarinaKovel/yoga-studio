@@ -1,6 +1,24 @@
-<section>
-    <h1>{{ this.trainerData?.name | uppercase }} </h1>
 
 
-</section>
+<div class="container">
+    <mat-grid-list [cols]="cols" rowHeight="4:1" gutterSize="16px" class="grid-container">
+        <mat-grid-tile [colspan]="1" [rowspan]="imageHeight">
+            <div class="container-basic">
+                <img [src]="this.trainerData?.avatar" [alt]="this.trainerData?.name" class="photo" />
+                <div>Basic info</div>
+            </div>
+        </mat-grid-tile>
 
+        <mat-grid-tile [colspan]="cols - 1 || 1" [rowspan]="1" class="content-tile">
+            <h1>{{ this.trainerData?.name | uppercase }} </h1>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="1" [rowspan]="rowspanContacts" class="content-tile side-border">
+            About
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="1" [rowspan]="rowspanContacts" class="content-tile next-border">
+            Available slots
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
