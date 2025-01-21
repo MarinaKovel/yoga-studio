@@ -47,6 +47,13 @@ form {
     align-items: center;
 }
 
+mat-error {
+    margin-bottom: 35px;
+    color: $green;
+    font-size: large;
+    font-weight: 700;
+}
+
 ::ng-deep {
     .cdk-overlay-container {
          z-index: 10;
@@ -59,4 +66,10 @@ form {
     .mat-mdc-unelevated-button>.mat-icon {
         margin-right: 0;
     }
+
+    .mat-mdc-snack-bar-container .mdc-snackbar__surface {
+        background-color: $green !important;
+    }
  }
+
+

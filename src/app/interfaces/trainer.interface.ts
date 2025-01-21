@@ -1,6 +1,6 @@
 interface Session {
     time: string;
-    freeSlots: number;
+    freeSlots: string;
 }
 export interface Trainer {
     id: string;

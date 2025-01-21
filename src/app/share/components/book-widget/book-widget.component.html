@@ -31,15 +31,18 @@
         </mat-button-toggle-group>
         <p>Time</p>
         <mat-button-toggle-group [hideSingleSelectionIndicator]="true" formControlName="selectedTime" class="calendar-days">
-            @for (slot of slots; let i = $index; track slot) {
+            @for (slot of slots; track slot) {
             <div class="slot">
-                <mat-button-toggle [value]="i" class="calendar-day">
+                <mat-button-toggle [value]="slot" [disabled]="finalSlots[slot] === 0" class="calendar-day">
                     <p>{{slot}}</p>
                 </mat-button-toggle>
                 <p>{{finalSlots[slot]}} slots left</p>
             </div>
             }
         </mat-button-toggle-group>
+        @if (form.controls['selectedDay'].invalid || form.controls['selectedTime'].invalid) {
+            <mat-error>Please choose a day and time</mat-error>
+          }
     </div>
 
     <button mat-flat-button color="primary" type="submit">Submit</button>

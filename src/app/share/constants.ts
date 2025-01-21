@@ -1,5 +1,3 @@
-import { DialogData } from "../interfaces/dialog-data.interface"
-import { Trainer } from "../interfaces/trainer.interface"
 import { YogaClasses } from "../interfaces/yoga-classes.interface"
 
 export const CLASSES_DATA: YogaClasses[] = [
@@ -74,3 +72,3278 @@ export const CLASSES_DATA: YogaClasses[] = [
       buttonFunction: () => {}
     },
   }
+
+  const mockAPI = [
+    {
+      "createdAt": "2025-01-16T17:52:25.472Z",
+      "name": "Dr. Shawn Hansen",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer1.png",
+      "id": "1",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "0"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-17T05:07:44.725Z",
+      "name": "Elena Carter",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer2.png",
+      "id": "2",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T18:26:51.015Z",
+      "name": "Lucy Wuckert",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer3.png",
+      "id": "3",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-17T06:46:52.195Z",
+      "name": "Marlene Maggio",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer4.png",
+      "id": "4",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T11:08:22.722Z",
+      "name": "Pearl O'Hara",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer5.png",
+      "id": "5",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T10:03:27.652Z",
+      "name": "Bessie Weimann",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer6.png",
+      "id": "6",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T13:07:55.724Z",
+      "name": "Agnes Harvey",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer7.png",
+      "id": "7",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T10:59:47.579Z",
+      "name": "Caroline Denesik",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer8.png",
+      "id": "8",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T20:11:10.378Z",
+      "name": "Christopher Blick",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer9.png",
+      "id": "9",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T15:16:46.909Z",
+      "name": "Ella Kozey",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer10.png",
+      "id": "10",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-17T01:22:39.960Z",
+      "name": "Ginger Wunsch",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer11.png",
+      "id": "11",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-17T00:06:42.306Z",
+      "name": "Marion West",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer12.png",
+      "id": "12",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-17T05:37:23.184Z",
+      "name": "Joe Murazik",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer13.png",
+      "id": "13",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T09:00:42.054Z",
+      "name": "Jeanette Sanford",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer14.png",
+      "id": "14",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T09:26:41.956Z",
+      "name": "Marco Boyle",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer15.png",
+      "id": "15",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T21:18:18.691Z",
+      "name": "Ms. Darla Grady",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer16.png",
+      "id": "16",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T23:28:59.952Z",
+      "name": "Myrtle Doyle",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer17.png",
+      "id": "17",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T22:05:20.800Z",
+      "name": "Jennie Gleason",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer18.png",
+      "id": "18",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T18:28:46.216Z",
+      "name": "Miriam Raynor",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer19.png",
+      "id": "19",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T21:53:12.145Z",
+      "name": "Anna Tremblay",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer20.png",
+      "id": "20",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-17T03:34:29.644Z",
+      "name": "Irma Wolf",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer21.png",
+      "id": "21",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-17T07:05:11.531Z",
+      "name": "Armando Abshire III",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer22.png",
+      "id": "22",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T09:27:55.949Z",
+      "name": "Virginia Fay",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer23.png",
+      "id": "23",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T11:14:52.322Z",
+      "name": "Ramon Altenwerth",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer24.png",
+      "id": "24",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T15:11:36.913Z",
+      "name": "Owen Gibson DDS",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer25.png",
+      "id": "25",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T21:15:37.446Z",
+      "name": "Keith Wolff",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer26.png",
+      "id": "26",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T23:52:01.416Z",
+      "name": "Cornelius Kilback DDS",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer27.png",
+      "id": "27",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T19:57:50.930Z",
+      "name": "Isabel Murazik",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer28.png",
+      "id": "28",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-17T05:39:52.005Z",
+      "name": "Van Herzog",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer29.png",
+      "id": "29",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-16T11:35:15.152Z",
+      "name": "Sharon Brown IV",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer30.png",
+      "id": "30",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "createdAt": "2025-01-17T00:44:09.109Z",
+      "name": "Elvira Hilll",
+      "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer31.png",
+      "id": "31",
+      "sessions": [
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "10"
+          }
+        ]
+      ]
+    }
+  ]
