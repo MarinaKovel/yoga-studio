@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+// Widget can be implemented from third party - in this case MutationObserver serves to catch actions
+
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -30,25 +32,54 @@ export class BookWidgetComponent {
   trainers: Trainer[] = [];
   today = new Date();
   days: Date[] = [];
-  slots = ['10:00 AM', '12:00 PM', '16:00 PM'];
+  slots: string[] = [];
+  finalSlots: any = {};
+  currentDay: number = 0;
+
+  @ViewChild('formElement', { static: true }) formElement!: ElementRef;
+  private mutationObserver!: MutationObserver;
 
   constructor(
     private fb: FormBuilder,
     private fetchDataService: FetchDataService
   ) {
-    this.form = this.fb.group({ trainer: [''] })
+    this.form = this.fb.group({ trainer: [''], selectedDay: [''], selectedTime: [''] })
   }
 
   ngOnInit() {
     this.fetchDataService.fetchData().subscribe(
       (response) => {
-        this.trainers = response
+        this.trainers = response;
+        this.getSlotsNames(response);
       },
       (error) => {
         console.error('Error fetching data:', error);
       }
     )
     this.setDays()
+
+    // Initialize the MutationObserver
+    this.mutationObserver = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'childList') {
+          this.getSlotsNames(this.trainers);
+
+        }
+        if (mutation.type === 'attributes' && 
+            this.form.value.selectedDay !== undefined &&
+            this.form.value.selectedDay !== this.currentDay
+          ) {
+            this.currentDay = this.form.value.selectedDay || 0
+        }
+      });
+    });
+
+    // Observe the form element for changes
+    this.mutationObserver.observe(this.formElement.nativeElement, {
+      childList: true, // Observe additions/removals of child elements
+      attributes: true, // Observe changes to attributes
+      subtree: true, // Observe changes to all descendants
+    });
   }
 
   setDays() {
@@ -65,4 +96,26 @@ export class BookWidgetComponent {
     console.log(this.trainers.find(trainer => trainer.name === this.form.value.trainer));
   }
 
+  getSlotsNames(allTrainers: Trainer[]) {
+    const sessions = allTrainers
+      .filter(trainer => trainer.name === this.form.value.trainer || !this.form.value.trainer)
+      .map(trainer => trainer.sessions)
+      .map(daySession => daySession[this.currentDay])
+      .flat();
+
+    this.slots = [...new Set(sessions.map(session => session.time))];
+
+    this.slots.forEach(slot => {
+      const freeSum = sessions.filter(session => session.time === slot).reduce((acc, currentVal) => acc + +currentVal.freeSlots, 0);
+      this.finalSlots[slot] = freeSum;
+    })
+  }
+
+  ngOnDestroy() {
+    if (this.mutationObserver) {
+      this.mutationObserver.disconnect();
+    }
+  }
+
 }
+

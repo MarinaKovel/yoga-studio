@@ -41,6 +41,12 @@ form {
     border-left: 3px solid $green;
 }
 
+.slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 ::ng-deep {
     .cdk-overlay-container {
          z-index: 10;

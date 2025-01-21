@@ -1,4 +1,4 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
+<form #formElement [formGroup]="form" (ngSubmit)="onSubmit()">
     <mat-form-field>
         <mat-label>Choose trainer</mat-label>
         <mat-select formControlName="trainer">
@@ -21,21 +21,24 @@
             </div>
         </div>
 
-        <mat-button-toggle-group [hideSingleSelectionIndicator]="true" name="fontStyle" class="calendar-days">
-            @for (day of days; track day) {
-                <mat-button-toggle [value]="day" class="calendar-day">
-                    <p>{{ day | date: "E" }}</p>
-                    <p>{{ day | date: "d" }}</p>
-                </mat-button-toggle>
-                }
+        <mat-button-toggle-group [hideSingleSelectionIndicator]="true" formControlName="selectedDay" class="calendar-days">
+            @for (day of days; let i = $index; track day) {
+            <mat-button-toggle [value]="i" class="calendar-day">
+                <p>{{ day | date: "E" }}</p>
+                <p>{{ day | date: "d" }}</p>
+            </mat-button-toggle>
+            }
         </mat-button-toggle-group>
         <p>Time</p>
-        <mat-button-toggle-group [hideSingleSelectionIndicator]="true" name="fontStyle" class="calendar-days">
-            @for (slot of slots; track slot) {
-                <mat-button-toggle [value]="slot" class="calendar-day">
+        <mat-button-toggle-group [hideSingleSelectionIndicator]="true" formControlName="selectedTime" class="calendar-days">
+            @for (slot of slots; let i = $index; track slot) {
+            <div class="slot">
+                <mat-button-toggle [value]="i" class="calendar-day">
                     <p>{{slot}}</p>
                 </mat-button-toggle>
-                }
+                <p>{{finalSlots[slot]}} slots left</p>
+            </div>
+            }
         </mat-button-toggle-group>
     </div>
 

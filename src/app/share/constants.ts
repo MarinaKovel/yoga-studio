@@ -66,15 +66,6 @@ export const CLASSES_DATA: YogaClasses[] = [
     { icon: '../../../../assets/rug.svg', title: 'Free Rug', text: 'Indulge in a world of relaxation and rejuvenation with our exceptional spa services. At our LA center'},
   ]
 
-  export const TRAINERS: Trainer[] = [
-    { name: '', avatar: '../../../../assets/trainer1.png', id: '', createdAt: '' },
-    { name: '', avatar: '../../../../assets/trainer2.png', id: '', createdAt: '' },
-    { name: '', avatar: '../../../../assets/trainer3.png', id: '', createdAt: '' },
-    { name: '', avatar: '../../../../assets/trainer4.png', id: '', createdAt: '' },
-    { name: '', avatar: '../../../../assets/trainer5.png', id: '', createdAt: '' },
-    { name: '', avatar: '../../../../assets/trainer6.png', id: '', createdAt: '' },
-  ]
-
   export const dialogContent = {
     bookSesson: {
       title: 'Free 30 Day MemberShip',
