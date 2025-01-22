@@ -7,5 +7,6 @@ export interface Trainer {
     name: string;
     avatar: string;
     createdAt: string;
+    class: string;
     sessions: Session[][];
 }

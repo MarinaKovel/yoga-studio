@@ -1,7 +1,7 @@
 
 
 <div class="container">
-    <mat-grid-list [cols]="cols" rowHeight="100px" gutterSize="16px" class="grid-container">
+    <mat-grid-list [cols]="cols" rowHeight="150px" gutterSize="16px" class="grid-container">
         <mat-grid-tile [colspan]="1" [rowspan]="imageHeight">
             <div class="container-basic">
                 <img [src]="this.trainerData?.avatar" [alt]="this.trainerData?.name" class="photo" />
@@ -14,11 +14,11 @@
         </mat-grid-tile>
 
         <mat-grid-tile [colspan]="1" [rowspan]="rowspanContacts" class="content-tile side-border">
-            About
+            About trainer
         </mat-grid-tile>
 
         <mat-grid-tile [colspan]="1" [rowspan]="rowspanContacts" class="content-tile next-border">
-            smth
+            Personality
         </mat-grid-tile>
     </mat-grid-list>
 </div>

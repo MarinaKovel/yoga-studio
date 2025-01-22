@@ -3,7 +3,7 @@
         <mat-label>Choose trainer</mat-label>
         <mat-select formControlName="trainer">
             @for (trainer of trainers; track trainer) {
-            <mat-option [value]="trainer.name">{{trainer.name}}</mat-option>
+            <mat-option [value]="trainer.name">{{trainer.name}} - {{trainer.class}}</mat-option>
             }
         </mat-select>
     </mat-form-field>

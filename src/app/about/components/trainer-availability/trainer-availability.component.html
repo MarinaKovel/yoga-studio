@@ -4,7 +4,7 @@
     <label for="trainer-select">Select a Trainer:</label>
     <select id="trainer-select" (change)="selectTrainer($event)">
       <option *ngFor="let trainer of trainers()" [value]="trainer.id">
-        {{ trainer.name }}
+        {{ trainer.name }} - {{ trainer.class }}
       </option>
     </select>
   
