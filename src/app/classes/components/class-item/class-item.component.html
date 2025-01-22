@@ -1,0 +1,6 @@
+<article class="class-item">
+    <img [src]="classData.image" [alt]="classData.name" />
+    <h3>{{ classData.name }}</h3>
+    <p>{{ classData.description }}</p>
+    <app-outlined-button text="Book Now" (click)="bookClass()"></app-outlined-button>
+</article>

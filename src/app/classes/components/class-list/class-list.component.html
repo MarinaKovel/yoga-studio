@@ -1,0 +1,14 @@
+<div>
+    <h1>{{ 'Yoga Classes' | uppercase }}</h1>
+    <div class="class-list">
+        <app-class-item 
+      *ngFor="let yogaClass of classes" 
+      [classData]="yogaClass" 
+      (book)="handleBooking($event)">
+    </app-class-item>
+    </div>
+
+    <div *ngIf="bookedClass">
+      <h3>You booked: {{ bookedClass }}</h3>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 66px;
+}
+
+.class-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
