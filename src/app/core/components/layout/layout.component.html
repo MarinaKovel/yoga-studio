@@ -2,8 +2,8 @@
     <mat-sidenav #sidenav mode="over">
         <nav class="menu-sections-mobile">
             <a routerLink="home" class="menu-item" (click)="sidenav.toggle()">Home</a>
-            <a routerLink="" class="menu-item" (click)="sidenav.toggle()">Services</a>
-            <a routerLink="" class="menu-item" (click)="sidenav.toggle()">Our Facility</a>
+            <a routerLink="services" class="menu-item" (click)="sidenav.toggle()">Services</a>
+            <a routerLink="classes" class="menu-item" (click)="sidenav.toggle()">Our Classes</a>
             <a routerLink="about" class="menu-item" (click)="sidenav.toggle()">About</a>
             <a routerLink="contact" class="menu-item" (click)="sidenav.toggle()">Contact</a>
         </nav>
@@ -19,7 +19,7 @@
             </div>
             <nav *ngIf="!isTablet" class="menu-sections">
                 <a routerLink="home" class="menu-item" [ngClass]="{'logo-tablet': isTablet}">Home</a>
-                <a routerLink="" class="menu-item" [ngClass]="{'logo-tablet': isTablet}">Services</a>
+                <a routerLink="services" class="menu-item" [ngClass]="{'logo-tablet': isTablet}">Services</a>
                 <a routerLink="classes" class="menu-item" [ngClass]="{'logo-tablet': isTablet}">Our Classes</a>
                 <a routerLink="about" class="menu-item" [ngClass]="{'logo-tablet': isTablet}">About</a>
                 <a routerLink="contact" class="menu-item" [ngClass]="{'logo-tablet': isTablet}">Contact</a>
