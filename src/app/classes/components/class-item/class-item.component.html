@@ -4,4 +4,10 @@
     <p><strong>Difficulty: {{ classData.level | difficultyLabel }}</strong></p>
     <p>{{ classData.description }}</p>
     <app-outlined-button text="Book Now" (click)="bookClass()"></app-outlined-button>
+    <div [ngSwitch]="sessionStatus">
+        <i *ngSwitchCase="'Completed'" class="icon-check-circle">✔️ Completed</i>
+        <i *ngSwitchCase="'In Progress'" class="icon-progress">⏳ In Progress</i>
+        <i *ngSwitchCase="'Not Started'" class="icon-circle">⭕ Not Started</i>
+        <i *ngSwitchDefault class="icon-help-circle">❓ Unknown Status</i>
+      </div>
 </article>

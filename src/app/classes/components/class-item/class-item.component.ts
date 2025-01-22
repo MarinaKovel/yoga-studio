@@ -7,10 +7,13 @@ import { YogaClasses } from '../../../interfaces/yoga-classes.interface';
   styleUrl: './class-item.component.scss'
 })
 export class ClassItemComponent {
+  sessionStatus: 'Completed' | 'In Progress' | 'Not Started' = 'Not Started'
+
   @Input() classData!: YogaClasses;
   @Output() book = new EventEmitter<string>();
 
   bookClass() {
     this.book.emit(this.classData.name);
+    this.sessionStatus = 'In Progress'
   }
 }
