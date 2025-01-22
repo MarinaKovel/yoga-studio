@@ -8,5 +8,6 @@ export interface YogaClasses {
     name: string;
     image: string;
     description: string;
+    level: number;
     pros: ClassPros[]
 }

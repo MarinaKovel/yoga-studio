@@ -3,6 +3,7 @@
     <img [src]="data.image" [alt]="data.name" class="container-img" [ngClass]="{'container-img-tablet': isTablet, 'container-img-mobile': isMobile}" />
     <div>
         <h3>{{data.name}}</h3>
+        <p><strong>Difficulty: {{data.level | difficultyLabel}}</strong></p>
         <p>{{data.description}}</p>
         <div class="items">
             <div *ngFor="let item of data.pros">

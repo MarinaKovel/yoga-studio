@@ -6,6 +6,7 @@ import { CustomDialogComponent } from './components/custom-dialog/custom-dialog.
 import { OverlayModule } from '@angular/cdk/overlay';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BookWidgetComponent } from './components/book-widget/book-widget.component';
+import { DifficultyLabelPipe } from './pipes/difficulty-label.pipe';
 
 @NgModule({
   declarations: [],
@@ -17,12 +18,14 @@ import { BookWidgetComponent } from './components/book-widget/book-widget.compon
     OverlayModule,
     MatDialogModule,
     BookWidgetComponent,
+    DifficultyLabelPipe
   ],
   exports: [
     ContactButtonComponent, 
     OutlinedButtonComponent, 
     CustomDialogComponent,
-    BookWidgetComponent
+    BookWidgetComponent,
+    DifficultyLabelPipe
   ]
 })
 export class ShareModule { }

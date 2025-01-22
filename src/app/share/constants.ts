@@ -5,6 +5,7 @@ export const CLASSES_DATA: YogaClasses[] = [
       name: 'Beginners Yoga',
       image: '../../../../assets/class-beginners.png',
       description: 'Perfect for newcomers, our beginners yoga classes focus on foundational poses and techniques to build strength, flexibility, and confidence. Start your yoga journey with us in a supportive and friendly environment.',
+      level: 1,
       pros: [
         { id: 1,name: 'Free Rugs', description: 'Perfect for newcomers, our beginners yoga classes focus on foundational poses and techniques to build strength, flexibility' },
         { id: 2,name: 'Changing Room', description: 'Changing Room with lockers and showers is available' },
@@ -16,6 +17,7 @@ export const CLASSES_DATA: YogaClasses[] = [
       name: 'Stretching',
       image: '../../../../assets/stretching.jpg',
       description: 'New stretching classes for flexibility, mobility and health are released WEEKLY. Appropriate for absolute beginners, beginners, and intermediate/advanced.',
+      level: 2,
       pros: [
         { id: 1, name: 'Free Lesson', description: 'You can try your first lesson for free' },
         { id: 2, name: 'Free Rugs', description: 'Perfect for newcomers, our beginners yoga classes focus on foundational poses and techniques to build strength, flexibility' },
@@ -27,6 +29,7 @@ export const CLASSES_DATA: YogaClasses[] = [
       name: 'Fly-Yoga',
       image: '../../../../assets/fly-yoga.jpg',
       description: 'Aerial yoga allows you to do challenging poses without putting pressure on your shoulders, spine, or head like mat yoga may.',
+      level: 3,
       pros: [
         { id: 1, name: 'Free Rugs', description: 'Perfect for newcomers, our beginners yoga classes focus on foundational poses and techniques to build strength, flexibility' },
         { id: 2, name: 'Changing Room', description: 'Changing Room with lockers and showers is available' },
@@ -37,6 +40,7 @@ export const CLASSES_DATA: YogaClasses[] = [
       name: 'Yin-Yoga',
       image: '../../../../assets/yin-yoga.jpg',
       description: 'These Yin Yoga sequences are designed to help you sit longer and more comfortably in meditation by stretching connective tissue around your joints.',
+      level: 3,
       pros: [
         { id: 1, name: 'Free Rugs', description: 'Perfect for newcomers, our beginners yoga classes focus on foundational poses and techniques to build strength, flexibility' },
         { id: 2, name: 'Changing Room', description: 'Changing Room with lockers and showers is available' },
@@ -48,6 +52,7 @@ export const CLASSES_DATA: YogaClasses[] = [
       name: 'Zoomba',
       image: '../../../../assets/zoomba.jpg',
       description: 'Get fit, stay fit. Burn calories while having fun at the best exercise class ever.',
+      level: 1,
       pros: [
         { id: 1, name: 'Free Rugs', description: 'Perfect for newcomers, our beginners yoga classes focus on foundational poses and techniques to build strength, flexibility' },
         { id: 2, name: 'Free Lesson', description: 'You can try your first lesson for free' },
