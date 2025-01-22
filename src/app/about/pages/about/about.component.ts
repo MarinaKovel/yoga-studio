@@ -1,6 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { FetchDataService } from '../../../share/services/fetch-data.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -18,7 +19,11 @@ export class AboutComponent {
   @ViewChild('observeScroll', { static: true }) observeScroll!: ElementRef;
   private intersectionObserver!: IntersectionObserver;
 
-  constructor(private fetchDataService: FetchDataService, public snackBar: MatSnackBar) {
+  constructor(
+    private fetchDataService: FetchDataService, 
+    public snackBar: MatSnackBar,
+    private router: Router
+  ) {
   }
 
   ngOnInit() {

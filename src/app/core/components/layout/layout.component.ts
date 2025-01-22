@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
+import { BookService } from '../../../share/services/book.service';
 
 @Component({
   selector: 'app-layout',
@@ -9,7 +10,7 @@ import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 export class LayoutComponent {
   isTablet = false;
   
-    constructor(private breakpointService: BreakpointObserver) {}
+    constructor(private breakpointService: BreakpointObserver, public bookService: BookService) {}
   
     ngOnInit() {
       this.breakpointService

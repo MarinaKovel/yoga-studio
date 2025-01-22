@@ -6,6 +6,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { TrainerComponent } from './pages/trainer/trainer.component';
 import { MatGridListModule, MatGridTile } from '@angular/material/grid-list';
+import { TrainerAvailabilityComponent } from './components/trainer-availability/trainer-availability.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AboutComponent, TrainerComponent],
+  declarations: [AboutComponent, TrainerComponent, TrainerAvailabilityComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),

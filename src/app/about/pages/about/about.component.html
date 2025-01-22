@@ -1,11 +1,11 @@
 <section>
     <h1>{{ 'Our Team' | uppercase }} </h1>
     <p>Data from the free API is used</p>
-    <div *ngFor="let item of data">
+    <a href="/about/{{item.id}}" *ngFor="let item of data">
         <!-- <div *ngFor="let item of data; else emptyTemplate"> -->
         <img [src]="item.avatar" alt="" class="member" />
         <p>{{item.name}}</p>
-    </div>
+    </a>
 </section>
 
 <div #observeScroll class="loader">
