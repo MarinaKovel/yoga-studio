@@ -7,6 +7,8 @@ import { OverlayModule } from '@angular/cdk/overlay';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BookWidgetComponent } from './components/book-widget/book-widget.component';
 import { DifficultyLabelPipe } from './pipes/difficulty-label.pipe';
+import { ProgressTrackerComponent } from './components/progress-tracker/progress-tracker.component';
+import { BreathPipe } from './pipes/breath.pipe';
 
 @NgModule({
   declarations: [],
@@ -18,14 +20,17 @@ import { DifficultyLabelPipe } from './pipes/difficulty-label.pipe';
     OverlayModule,
     MatDialogModule,
     BookWidgetComponent,
-    DifficultyLabelPipe
+    DifficultyLabelPipe,
+    ProgressTrackerComponent,
+    BreathPipe
   ],
   exports: [
     ContactButtonComponent, 
     OutlinedButtonComponent, 
     CustomDialogComponent,
     BookWidgetComponent,
-    DifficultyLabelPipe
+    DifficultyLabelPipe,
+    ProgressTrackerComponent
   ]
 })
 export class ShareModule { }
