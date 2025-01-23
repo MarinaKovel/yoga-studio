@@ -1,17 +1,19 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Pose } from '../../../interfaces/pose.interface';
 
 @Component({
   selector: 'app-pose-tracker',
   templateUrl: './pose-tracker.component.html',
-  styleUrl: './pose-tracker.component.scss'
+  styleUrl: './pose-tracker.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PoseTrackerComponent {
   yogaForm: FormGroup;
   showSubmit: boolean = false;
   showResult: boolean = false;
   result: Pose[] = [];
+  level: number = 1;
 
   constructor(private fb: FormBuilder) {
     this.yogaForm = this.fb.group({
@@ -40,5 +42,10 @@ export class PoseTrackerComponent {
   onSubmit() {
     this.showResult = true;
     this.result = this.yogaForm.value.poses;
+    
+    const fullDuration = this.result.reduce((acc, currentVal: Pose) =>  acc + currentVal.duration, 0)
+    if (fullDuration > 30) {
+      this.level = fullDuration < 100 ? 2 : 3;
+    }
   }
 }

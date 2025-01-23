@@ -25,5 +25,8 @@
         <div *ngFor="let pose of result">
             <p><strong>{{ pose.name }}:</strong> {{ pose.duration }} min.</p>
         </div>
+        <app-my-level>
+            <span #levelContent>{{ level | difficultyLabel }}</span>
+        </app-my-level>
     </div>
 </div>
