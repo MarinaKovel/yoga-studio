@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { BreathPipe } from '../../pipes/breath.pipe';
 import { MatButton } from '@angular/material/button';
+import { ShareModule } from '../../share.module';
 
 @Component({
   selector: 'app-progress-tracker',
   standalone: true,
-  imports: [CommonModule, BreathPipe, MatButton],
+  imports: [CommonModule, MatButton, ShareModule],
   templateUrl: './progress-tracker.component.html',
   styleUrl: './progress-tracker.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush

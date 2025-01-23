@@ -1,11 +1,12 @@
-
-<button *ngIf="!meditation" mat-flat-button class="meditation-button" color="primary" (click)="startMeditation()">Start Meditation Session</button>
+<button *ngIf="!meditation" mat-flat-button class="meditation-button" color="primary" (click)="startMeditation()">Start
+    Meditation Session</button>
 
 <div *ngIf="meditation" class="progress-tracker">
     <h2>Meditation Session Progress</h2>
-    <h3>{{ breath | breath }}</h3>
+    <h3 appBreathAnimation class="breathing">Let's start!</h3>
+    
     <div class="progress-bar">
-      <div class="progress" [style.width.%]="progress"></div>
+        <div class="progress" [style.width.%]="progress"></div>
     </div>
     <p>{{ progress | number: '1.0-2' }}% completed</p>
 </div>

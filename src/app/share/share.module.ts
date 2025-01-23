@@ -8,10 +8,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { BookWidgetComponent } from './components/book-widget/book-widget.component';
 import { DifficultyLabelPipe } from './pipes/difficulty-label.pipe';
 import { ProgressTrackerComponent } from './components/progress-tracker/progress-tracker.component';
-import { BreathPipe } from './pipes/breath.pipe';
+import { BreathAnimationDirective } from './directives/breath-animation.directive';
 
 @NgModule({
-  declarations: [],
+  declarations: [BreathAnimationDirective],
   imports: [
     CommonModule,
     ContactButtonComponent,
@@ -22,7 +22,6 @@ import { BreathPipe } from './pipes/breath.pipe';
     BookWidgetComponent,
     DifficultyLabelPipe,
     ProgressTrackerComponent,
-    BreathPipe
   ],
   exports: [
     ContactButtonComponent, 
@@ -30,7 +29,8 @@ import { BreathPipe } from './pipes/breath.pipe';
     CustomDialogComponent,
     BookWidgetComponent,
     DifficultyLabelPipe,
-    ProgressTrackerComponent
+    ProgressTrackerComponent,
+    BreathAnimationDirective
   ]
 })
 export class ShareModule { }
