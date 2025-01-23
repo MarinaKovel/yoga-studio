@@ -1,0 +1,29 @@
+<div class="container">
+    <form [formGroup]="yogaForm" (ngSubmit)="onSubmit()">
+        <div formArrayName="poses">
+            <div *ngFor="let pose of poses.controls; let i = index" [formGroupName]="i" class="pose-group">
+                <mat-form-field appearance="fill" class="full-width">
+                    <mat-label>Pose Name:</mat-label>
+                    <input matInput formControlName="name" placeholder="Enter pose name">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="full-width">
+                    <mat-label>Duration (mins):</mat-label>
+                    <input matInput formControlName="duration"  type="number" placeholder="Enter duration">
+                </mat-form-field>
+                <app-outlined-button text="Remove Pose" (click)="removePose(i)"></app-outlined-button>
+            </div>
+        </div>
+        <div class="buttons">
+            <app-outlined-button text="Add Pose" (click)="addPose()"></app-outlined-button>
+            <button *ngIf="showSubmit" mat-flat-button color="primary" type="submit" [disabled]="yogaForm.invalid">Submit</button>
+        </div>
+
+    </form>
+    <div *ngIf="showResult" class="my-poses">
+        <h4>My poses:</h4>
+        <div *ngFor="let pose of result">
+            <p><strong>{{ pose.name }}:</strong> {{ pose.duration }} min.</p>
+        </div>
+    </div>
+</div>
