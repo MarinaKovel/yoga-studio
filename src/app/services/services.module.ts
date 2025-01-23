@@ -12,6 +12,7 @@ import { MatInput } from '@angular/material/input';
 import { MyLevelComponent } from './components/my-level/my-level.component';
 import { DifficultyLabelPipe } from '../share/pipes/difficulty-label.pipe';
 import {MatDividerModule} from '@angular/material/divider';
+import { YogaPoseListComponent } from './components/yoga-pose-list/yoga-pose-list.component';
 
 const routes: Routes = [{
   path: '',
@@ -19,7 +20,12 @@ const routes: Routes = [{
 }];
 
 @NgModule({
-  declarations: [ServicesComponent, PoseTrackerComponent, MyLevelComponent],
+  declarations: [
+    ServicesComponent, 
+    PoseTrackerComponent, 
+    MyLevelComponent, 
+    YogaPoseListComponent
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
