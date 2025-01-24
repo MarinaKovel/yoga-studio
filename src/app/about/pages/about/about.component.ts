@@ -2,6 +2,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { FetchDataService } from '../../../share/services/fetch-data.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { Trainer } from '../../../interfaces/trainer.interface';
 
 @Component({
   selector: 'app-about',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
-  data: any[] = [];
+  data: Trainer[] = [];
   page: number = 1;
   limit: number = 10;
   allTeam: number = 31;

@@ -4,12 +4,13 @@
 
 @include mat.all-component-themes(theme.$custom-theme);
 
-html, body { 
-    height: 100%; 
+html,
+body {
+    height: 100%;
 }
 
-body { 
-    margin: 0; 
+body {
+    margin: 0;
     font-family: "Inter", serif;
 }
 
@@ -28,7 +29,11 @@ h3 {
     font-size: 24px;
 }
 
-h1, h2, h3, h5, p {
+h1,
+h2,
+h3,
+h5,
+p {
     margin: 0;
 }
 
@@ -36,10 +41,26 @@ p {
     line-height: 28px;
 }
 
-.mat-flat-button, .mat-raised-button, .mat-stroked-button {
+.mat-flat-button,
+.mat-raised-button,
+.mat-stroked-button {
     background-color: theme.$green;
     color: theme.$white;
     font-size: 14px;
     font-weight: 600;
     border-radius: 6px;
-  }
+}
+
+body.loading::after {
+    content: 'Loading...';
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    background: theme.$green;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+    z-index: 1000;
+}
