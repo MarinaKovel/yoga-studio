@@ -23,8 +23,7 @@ export class LoginComponent {
   }
 
   onSubmit() {
-    localStorage.setItem('user', JSON.stringify(this.form.value));
-    this.authService.login();
-    this.router.navigate(['/home']);
+    this.authService.login(this.form.value);
+    this.router.navigate(['/']);
   }
 }
