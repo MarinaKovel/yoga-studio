@@ -12,7 +12,8 @@ import { MatInput } from '@angular/material/input';
 import { MyLevelComponent } from './components/my-level/my-level.component';
 import { DifficultyLabelPipe } from '../share/pipes/difficulty-label.pipe';
 import {MatDividerModule} from '@angular/material/divider';
-import { YogaPoseListComponent } from './components/yoga-pose-list/yoga-pose-list.component';
+import { SessionProgressComponent } from './components/session-progress/session-progress.component';
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 
 const routes: Routes = [{
   path: '',
@@ -24,7 +25,8 @@ const routes: Routes = [{
     ServicesComponent, 
     PoseTrackerComponent, 
     MyLevelComponent, 
-    YogaPoseListComponent
+    SessionProgressComponent,
+    ProgressBarComponent
   ],
   imports: [
     CommonModule,

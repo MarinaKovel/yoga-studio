@@ -1,0 +1,5 @@
+<p>{{ poses[currentPose].name }} - {{ poses[currentPose].duration }} min.</p>
+<div class="progress-bar-container">
+    <div class="progress-bar" [style.width.%]="progress" [class.complete]="progress === 100"></div>
+</div>
+<p>{{ progress }}% Complete</p>

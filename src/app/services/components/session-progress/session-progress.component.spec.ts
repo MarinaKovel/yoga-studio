@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { YogaPoseListComponent } from './yoga-pose-list.component';
+import { SessionProgressComponent } from './session-progress.component';
 
-describe('YogaPoseListComponent', () => {
-  let component: YogaPoseListComponent;
-  let fixture: ComponentFixture<YogaPoseListComponent>;
+describe('SessionProgressComponent', () => {
+  let component: SessionProgressComponent;
+  let fixture: ComponentFixture<SessionProgressComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [YogaPoseListComponent]
+      imports: [SessionProgressComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(YogaPoseListComponent);
+    fixture = TestBed.createComponent(SessionProgressComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

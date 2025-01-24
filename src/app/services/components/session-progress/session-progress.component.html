@@ -1,0 +1,7 @@
+<button *ngIf="!start" mat-flat-button color="primary" class="start-session" (click)="startSession()">Start
+    Session</button>
+
+<div *ngIf="start" class="session">
+    <app-progress-bar></app-progress-bar>
+    <button *ngIf="showNext" mat-flat-button color="primary" (click)="increaseProgress()">Complete Pose</button>
+</div>
