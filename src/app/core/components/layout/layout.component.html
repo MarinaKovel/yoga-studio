@@ -6,6 +6,7 @@
             <a routerLink="classes" class="menu-item" (click)="sidenav.toggle()">Our Classes</a>
             <a routerLink="about" class="menu-item" (click)="sidenav.toggle()">About</a>
             <a routerLink="contact" class="menu-item" (click)="sidenav.toggle()">Contact</a>
+            <a routerLink="login" class="menu-item" (click)="sidenav.toggle()">Login</a>
         </nav>
     </mat-sidenav>
 
@@ -23,6 +24,7 @@
                 <a routerLink="classes" class="menu-item" [ngClass]="{'logo-tablet': isTablet}">Our Classes</a>
                 <a routerLink="about" class="menu-item" [ngClass]="{'logo-tablet': isTablet}">About</a>
                 <a routerLink="contact" class="menu-item" [ngClass]="{'logo-tablet': isTablet}">Contact</a>
+                <a routerLink="login" class="menu-item" [ngClass]="{'logo-tablet': isTablet}">Login</a>
             </nav>
             <button mat-flat-button color="primary" (click)="bookService.redirectToBooking()"><img src="../../../../assets/cart.svg" alt="Shop" />Book Now</button>
         </mat-toolbar>

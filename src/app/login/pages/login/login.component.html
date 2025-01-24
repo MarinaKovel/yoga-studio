@@ -1,0 +1,16 @@
+<section>
+    <h1>{{ 'Login form' | uppercase }}</h1>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-conatainer">
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Full name</mat-label>
+            <input matInput formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password">
+        </mat-form-field>
+
+        <button type="submit" mat-flat-button color="primary">Submit</button>
+    </form>
+</section>

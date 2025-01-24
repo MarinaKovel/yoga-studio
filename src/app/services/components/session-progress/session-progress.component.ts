@@ -17,11 +17,11 @@ export class SessionProgressComponent implements AfterViewInit, AfterViewChecked
   showNext: boolean = true;
 
   ngAfterViewInit() {
-    console.log('ngAfterViewInit called. Initial progress value:', this.progressBar.progress);
+    console.log('ngAfterViewInit called. Initial progress value:', this.progressBar?.progress);
   }
 
   ngAfterViewChecked() {
-    if (this.progressBar.progress !== this.previousProgress) {
+    if (this.progressBar && this.progressBar.progress !== this.previousProgress) {
       console.log(`Progress changed from ${this.previousProgress}% to ${this.progressBar.progress}%`);
       this.previousProgress = this.progressBar.progress;
     }

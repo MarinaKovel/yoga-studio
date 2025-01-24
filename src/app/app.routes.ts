@@ -8,5 +8,6 @@ export const routes: Routes = [
     { path: 'booking', loadChildren: () => import('./booking/booking.module').then(m => m.BookingModule) },
     { path: 'classes', loadChildren: () => import('./classes/classes.module').then(m => m.ClassesModule) },
     { path: 'services', loadChildren: () => import('./services/services.module').then(m => m.ServicesModule) },
+    { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
     { path: '**', redirectTo: 'home' },
 ];
