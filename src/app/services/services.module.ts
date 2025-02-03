@@ -14,6 +14,7 @@ import { DifficultyLabelPipe } from '../share/pipes/difficulty-label.pipe';
 import {MatDividerModule} from '@angular/material/divider';
 import { SessionProgressComponent } from './components/session-progress/session-progress.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
+import { PoseListComponent } from './components/pose-list/pose-list.component';
 
 const routes: Routes = [{
   path: '',
@@ -26,7 +27,8 @@ const routes: Routes = [{
     PoseTrackerComponent, 
     MyLevelComponent, 
     SessionProgressComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    PoseListComponent
   ],
   imports: [
     CommonModule,
