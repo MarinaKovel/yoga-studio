@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { YogaPoseNameService } from '../../../share/services/yoga-pose-name.service';
+import { YogaPoseService } from '../../../share/services/yoga-pose.service';
 import { Pose } from '../../../interfaces/pose.interface';
-import { BeginerPosesService } from '../../../share/services/beginner-poses.service';
 
 @Component({
   selector: 'app-pose-list',
@@ -11,16 +10,21 @@ import { BeginerPosesService } from '../../../share/services/beginner-poses.serv
 export class PoseListComponent {
   poseNames: string[] = [];
   beginnerPoses: Pose[] = [];
+  userPoses: Pose[] = [];
 
-  constructor(private yogaPoseNameService: YogaPoseNameService, private beginnerPosesService: BeginerPosesService) {}
+  constructor(private yogaPoseService: YogaPoseService) {}
 
   ngOnInit() {
-    this.yogaPoseNameService.getPoseNames().subscribe(
+    this.yogaPoseService.getPoseNames().subscribe(
       (names) => this.poseNames = names
     )
 
-    this.beginnerPosesService.getBeginnerPoses().subscribe(
+    this.yogaPoseService.getBeginnerPoses().subscribe(
       (poses) => this.beginnerPoses = poses
+    )
+
+    this.yogaPoseService.getUserPreferredPoses().subscribe(
+      (poses) => this.userPoses = poses
     )
   }
 }
