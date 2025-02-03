@@ -7,15 +7,21 @@ import { Observable } from 'rxjs';
 })
 export class FetchDataService {
 
-  private apiUrl = `https://6789fbd1dd587da7ac284cfa.mockapi.io/team`;
+  private apiUrl = `https://6789fbd1dd587da7ac284cfa.mockapi.io/`;
+  private team = 'team';
+  private poses = 'poses';
 
   constructor(private http: HttpClient) {}
 
   fetchData(queryParams: string = ''): Observable<any> {
-    return this.http.get(this.apiUrl + queryParams);
+    return this.http.get(this.apiUrl + this.team + queryParams);
   }
 
   updateData(id: string, data: any): Observable<any> {
-    return this.http.put(`${this.apiUrl}/${id}`, data);
+    return this.http.put(`${this.apiUrl + this.team}/${id}`, data);
+  }
+
+  fetchPoses(queryParams: string = ''): Observable<any> {
+    return this.http.get(this.apiUrl + this.poses + queryParams);
   }
 }
