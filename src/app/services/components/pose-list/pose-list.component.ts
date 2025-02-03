@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { YogaPoseNameService } from '../../../share/services/yoga-pose-name.service';
+import { Pose } from '../../../interfaces/pose.interface';
+import { BeginerPosesService } from '../../../share/services/beginner-poses.service';
 
 @Component({
   selector: 'app-pose-list',
@@ -8,12 +10,17 @@ import { YogaPoseNameService } from '../../../share/services/yoga-pose-name.serv
 })
 export class PoseListComponent {
   poseNames: string[] = [];
+  beginnerPoses: Pose[] = [];
 
-  constructor(private yogaPoseNameService: YogaPoseNameService) {}
+  constructor(private yogaPoseNameService: YogaPoseNameService, private beginnerPosesService: BeginerPosesService) {}
 
   ngOnInit() {
     this.yogaPoseNameService.getPoseNames().subscribe(
-          (names) => this.poseNames = names
-        )
+      (names) => this.poseNames = names
+    )
+
+    this.beginnerPosesService.getBeginnerPoses().subscribe(
+      (poses) => this.beginnerPoses = poses
+    )
   }
 }
