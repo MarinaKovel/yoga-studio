@@ -26,5 +26,9 @@ export class PoseListComponent {
     this.yogaPoseService.getUserPreferredPoses().subscribe(
       (poses) => this.userPoses = poses
     )
+
+    this.yogaPoseService.getPosesAndCategories().subscribe(
+      (res) => console.log(res)
+    )
   }
 }

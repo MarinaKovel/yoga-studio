@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
+import { forkJoin } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
 import { FetchDataService } from './fetch-data.service';
 import { Pose } from '../../interfaces/pose.interface';
 
-import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
 export class YogaPoseService {
   userId = 2;  // Free API is limited, so here is used request for team member
 
-  constructor(private fetchDataService: FetchDataService, private http: HttpClient) {}
+  constructor(private fetchDataService: FetchDataService) {}
 
   getPoseNames() {
     return this.fetchDataService.fetchPoses().pipe(
@@ -29,5 +29,12 @@ export class YogaPoseService {
     return this.fetchDataService.fetchData(`/${this.userId}`).pipe(
       switchMap(user => this.fetchDataService.fetchPoses(`?level=${user.level}`))
     );
+  }
+
+  getPosesAndCategories() {
+    return forkJoin({
+      poses: this.fetchDataService.fetchPoses(),
+      teamMembers: this.fetchDataService.fetchData(),
+    });
   }
 }
