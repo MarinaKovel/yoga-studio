@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import { forkJoin } from 'rxjs';
-import { map, switchMap } from 'rxjs/operators';
+import { EMPTY, forkJoin, from } from 'rxjs';
+import { catchError, map, switchMap } from 'rxjs/operators';
 import { FetchDataService } from './fetch-data.service';
 import { Pose } from '../../interfaces/pose.interface';
+import { Trainer } from '../../interfaces/trainer.interface';
 
 
 @Injectable({
@@ -36,5 +37,15 @@ export class YogaPoseService {
       poses: this.fetchDataService.fetchPoses(),
       teamMembers: this.fetchDataService.fetchData(),
     });
+  }
+
+  getTrainer(id: number) {
+    return this.fetchDataService.fetchData(`/${id}`)
+    .pipe(
+        catchError(err => {
+            console.log(err)
+            return EMPTY;
+        })
+    );
   }
 }

@@ -1,0 +1,14 @@
+<p>First available trainer: {{ firstAvailableTrainer?.name }}</p>
+<p>Last available trainer: {{ lastAvailableTrainer?.name }}</p>
+<p>Any available trainer: {{ anyAvailableTrainer?.name }}</p>
+
+<div class="trainers">
+    <div>
+        <h4>All Trainers</h4>
+        <p *ngFor="let trainer of allTrainers">{{ trainer.name }}</p>
+    </div>
+    <div>
+        <h4>All Trainers by order</h4>
+        <p *ngFor="let trainerByOrder of allTrainersByOrder">{{ trainerByOrder.name }}</p>
+    </div>
+</div>

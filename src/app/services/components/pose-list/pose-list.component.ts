@@ -12,7 +12,7 @@ export class PoseListComponent {
   beginnerPoses: Pose[] = [];
   userPoses: Pose[] = [];
 
-  constructor(private yogaPoseService: YogaPoseService) {}
+  constructor(private yogaPoseService: YogaPoseService) { }
 
   ngOnInit() {
     this.yogaPoseService.getPoseNames().subscribe(

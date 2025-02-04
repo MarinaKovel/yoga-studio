@@ -1,5 +1,4 @@
-import { Component, Signal, effect, signal, computed } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component, signal, computed } from '@angular/core';
 import { FetchDataService } from '../../../share/services/fetch-data.service';
 import { Trainer } from '../../../interfaces/trainer.interface';
 import { Router } from '@angular/router';
