@@ -1,4 +1,3 @@
-import { Pose } from "../interfaces/pose.interface";
 import { YogaClasses } from "../interfaces/yoga-classes.interface"
 
 export const CLASSES_DATA: YogaClasses[] = [
@@ -69,14 +68,6 @@ export const CLASSES_DATA: YogaClasses[] = [
     { icon: '../../../../assets/free-lesson.svg', title: 'Free Lessons', text: 'Indulge in a world of relaxation and rejuvenation with our exceptional spa services. At our LA center'},
     { icon: '../../../../assets/rug.svg', title: 'Free Rug', text: 'Indulge in a world of relaxation and rejuvenation with our exceptional spa services. At our LA center'},
   ]
-
-  export const YOGA_POSES: Pose[] = [
-      {name: 'Downward Dog', duration: 2},
-      {name: 'Warrior I', duration: 1},
-      {name: 'Tree Pose', duration: 3},
-      {name: 'Fish Pose', duration: 1},
-      {name: "Child’s Pose", duration: 3},
-    ];
 
   export const dialogContent = {
     bookSesson: {

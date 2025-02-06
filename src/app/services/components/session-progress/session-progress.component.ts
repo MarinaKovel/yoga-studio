@@ -1,7 +1,7 @@
 import { Component, AfterViewInit, AfterViewChecked, ViewChild } from '@angular/core';
 import { ProgressBarComponent } from '../progress-bar/progress-bar.component';
 import { Pose } from '../../../interfaces/pose.interface';
-import { YOGA_POSES } from '../../../share/constants';
+import { FetchDataService } from '../../../share/services/fetch-data.service';
 
 @Component({
   selector: 'app-session-progress',
@@ -12,9 +12,17 @@ export class SessionProgressComponent implements AfterViewInit, AfterViewChecked
   @ViewChild(ProgressBarComponent) progressBar!: ProgressBarComponent;
 
   private previousProgress = 0;
-  poses: Pose[] = YOGA_POSES;
+  poses: Pose[] = [];
   start: boolean = false;
   showNext: boolean = true;
+
+  constructor(private fetchDataService: FetchDataService) { }
+
+  ngOnInit() {
+    this.fetchDataService.fetchPoses().subscribe(
+      (poses) => this.poses = poses
+    )
+  }
 
   ngAfterViewInit() {
     console.log('ngAfterViewInit called. Initial progress value:', this.progressBar?.progress);
