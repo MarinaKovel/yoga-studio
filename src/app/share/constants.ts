@@ -84,6 +84,35 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Dr. Shawn Hansen",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer1.png",
       "id": "1",
+      "class": "Beginners Yoga",
+      "level": 1,
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -92,11 +121,39 @@ export const CLASSES_DATA: YogaClasses[] = [
           },
           {
             "time": "12:00 PM",
+            "freeSlots": "3"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "9"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "5"
+          },
+          {
+            "time": "12:00 PM",
+            "freeSlots": "3"
+          },
+          {
+            "time": "16:00 PM",
+            "freeSlots": "0"
+          }
+        ],
+        [
+          {
+            "time": "10:00 AM",
+            "freeSlots": "4"
+          },
+          {
+            "time": "12:00 PM",
             "freeSlots": "5"
           },
           {
             "time": "16:00 PM",
-            "freeSlots": "10"
+            "freeSlots": "1"
           }
         ],
         [
@@ -110,35 +167,7 @@ export const CLASSES_DATA: YogaClasses[] = [
           },
           {
             "time": "16:00 PM",
-            "freeSlots": "10"
-          }
-        ],
-        [
-          {
-            "time": "10:00 AM",
-            "freeSlots": "5"
-          },
-          {
-            "time": "12:00 PM",
-            "freeSlots": "5"
-          },
-          {
-            "time": "16:00 PM",
-            "freeSlots": "10"
-          }
-        ],
-        [
-          {
-            "time": "10:00 AM",
-            "freeSlots": "5"
-          },
-          {
-            "time": "12:00 PM",
-            "freeSlots": "5"
-          },
-          {
-            "time": "16:00 PM",
-            "freeSlots": "10"
+            "freeSlots": "7"
           }
         ],
         [
@@ -176,11 +205,40 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Elena Carter",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer2.png",
       "id": "2",
+      "class": "Stretching",
+      "level": 2,
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
             "time": "10:00 AM",
-            "freeSlots": "5"
+            "freeSlots": "0"
           },
           {
             "time": "12:00 PM",
@@ -282,11 +340,40 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Lucy Wuckert",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer3.png",
       "id": "3",
+      "class": "Stretching",
+      "level": 1,
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
             "time": "10:00 AM",
-            "freeSlots": "5"
+            "freeSlots": "3"
           },
           {
             "time": "12:00 PM",
@@ -304,7 +391,7 @@ export const CLASSES_DATA: YogaClasses[] = [
           },
           {
             "time": "12:00 PM",
-            "freeSlots": "5"
+            "freeSlots": "4"
           },
           {
             "time": "16:00 PM",
@@ -388,6 +475,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Marlene Maggio",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer4.png",
       "id": "4",
+      "class": "Stretching",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -494,6 +609,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Pearl O'Hara",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer5.png",
       "id": "5",
+      "class": "Fly-Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -600,6 +743,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Bessie Weimann",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer6.png",
       "id": "6",
+      "class": "Fly-Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -706,6 +877,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Agnes Harvey",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer7.png",
       "id": "7",
+      "class": "Yin-Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -812,6 +1011,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Caroline Denesik",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer8.png",
       "id": "8",
+      "class": "Yin-Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -918,6 +1145,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Christopher Blick",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer9.png",
       "id": "9",
+      "class": "Yin-Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -1024,6 +1279,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Ella Kozey",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer10.png",
       "id": "10",
+      "class": "Zoomba",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -1130,6 +1413,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Ginger Wunsch",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer11.png",
       "id": "11",
+      "class": "Beginners Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -1236,6 +1547,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Marion West",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer12.png",
       "id": "12",
+      "class": "Beginners Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -1342,6 +1681,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Joe Murazik",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer13.png",
       "id": "13",
+      "class": "Beginners Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -1448,6 +1815,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Jeanette Sanford",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer14.png",
       "id": "14",
+      "class": "Beginners Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -1554,6 +1949,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Marco Boyle",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer15.png",
       "id": "15",
+      "class": "Beginners Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -1660,6 +2083,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Ms. Darla Grady",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer16.png",
       "id": "16",
+      "class": "Beginners Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -1766,6 +2217,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Myrtle Doyle",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer17.png",
       "id": "17",
+      "class": "Beginners Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -1872,6 +2351,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Jennie Gleason",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer18.png",
       "id": "18",
+      "class": "Beginners Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -1978,6 +2485,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Miriam Raynor",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer19.png",
       "id": "19",
+      "class": "Beginners Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -2084,6 +2619,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Anna Tremblay",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer20.png",
       "id": "20",
+      "class": "Stretching",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -2190,6 +2753,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Irma Wolf",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer21.png",
       "id": "21",
+      "class": "Stretching",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -2296,6 +2887,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Armando Abshire III",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer22.png",
       "id": "22",
+      "class": "Stretching",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -2402,6 +3021,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Virginia Fay",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer23.png",
       "id": "23",
+      "class": "Stretching",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -2508,6 +3155,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Ramon Altenwerth",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer24.png",
       "id": "24",
+      "class": "Stretching",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -2614,6 +3289,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Owen Gibson DDS",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer25.png",
       "id": "25",
+      "class": "Stretching",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -2720,6 +3423,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Keith Wolff",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer26.png",
       "id": "26",
+      "class": "Yin-Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -2826,6 +3557,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Cornelius Kilback DDS",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer27.png",
       "id": "27",
+      "class": "Yin-Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -2932,6 +3691,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Isabel Murazik",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer28.png",
       "id": "28",
+      "class": "Yin-Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -3038,6 +3825,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Van Herzog",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer29.png",
       "id": "29",
+      "class": "Yin-Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -3144,6 +3959,34 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Sharon Brown IV",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer30.png",
       "id": "30",
+      "class": "Yin-Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
@@ -3250,11 +4093,39 @@ export const CLASSES_DATA: YogaClasses[] = [
       "name": "Elvira Hilll",
       "avatar": "https://raw.githubusercontent.com/MarinaKovel/onlinestoredata/refs/heads/main/yoga-team/trainer31.png",
       "id": "31",
+      "class": "Yin-Yoga",
+      "personality": [
+        {
+          "start": "Introvert",
+          "end": "Extravert",
+          "value": 60
+        },
+        {
+          "start": "Analytical",
+          "end": "Creative",
+          "value": 70
+        },
+        {
+          "start": "Busy",
+          "end": "Time rich",
+          "value": 30
+        },
+        {
+          "start": "Messy",
+          "end": "Organized",
+          "value": 80
+        },
+        {
+          "start": "Independant",
+          "end": "Team player",
+          "value": 40
+        }
+      ],
       "sessions": [
         [
           {
             "time": "10:00 AM",
-            "freeSlots": "5"
+            "freeSlots": "4"
           },
           {
             "time": "12:00 PM",
@@ -3262,7 +4133,7 @@ export const CLASSES_DATA: YogaClasses[] = [
           },
           {
             "time": "16:00 PM",
-            "freeSlots": "10"
+            "freeSlots": "9"
           }
         ],
         [
@@ -3352,3 +4223,5 @@ export const CLASSES_DATA: YogaClasses[] = [
       ]
     }
   ]
+
+ 

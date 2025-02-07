@@ -8,6 +8,8 @@ import { TrainerComponent } from './pages/trainer/trainer.component';
 import { MatGridListModule, MatGridTile } from '@angular/material/grid-list';
 import { TrainerAvailabilityComponent } from './components/trainer-availability/trainer-availability.component';
 import { AvailableTrainersComponent } from './components/available-trainers/available-trainers.component';
+import { MatSliderModule } from '@angular/material/slider';
+import { FormsModule } from '@angular/forms';
 
 
 const routes: Routes = [
@@ -29,6 +31,8 @@ const routes: Routes = [
     MatSnackBarModule,
     MatGridListModule,
     MatGridTile,
+    MatSliderModule,
+    FormsModule,
   ]
 })
 export class AboutModule { }

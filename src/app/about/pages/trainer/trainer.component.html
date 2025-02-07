@@ -1,11 +1,33 @@
-
-
 <div class="container">
-    <mat-grid-list [cols]="cols" rowHeight="150px" gutterSize="16px" class="grid-container">
-        <mat-grid-tile [colspan]="1" [rowspan]="imageHeight">
+    <mat-grid-list [cols]="cols" rowHeight="200px" gutterSize="16px" class="grid-container">
+        <mat-grid-tile [colspan]="1" [rowspan]="imageHeight" [ngClass]="{'left-column': !isTablet}">
             <div class="container-basic">
                 <img [src]="this.trainerData?.avatar" [alt]="this.trainerData?.name" class="photo" />
-                <div>Basic info</div>
+                <div class="basic-info">
+                    <p class="basic-info-quote"><q>Build a future where people live in harmony with nature.</q><br />--
+                        WWF's goal</p>
+                    <div class="basic-info-personal">
+                        <div>
+                            <p> {{ 'Age' | uppercase }}</p>
+                            <p>25</p>
+                        </div>
+                        <div>
+                            <p> {{ 'Location' | uppercase }}</p>
+                            <p>Atlanta, GA</p>
+                        </div>
+                        <div>
+                            <p> {{ 'Class' | uppercase }}</p>
+                            <p>{{this.trainerData?.class}}</p>
+                        </div>
+                    </div>
+
+                    <div class="basic-info-tags">
+                        <p> {{ 'Passionate' | uppercase }}</p>
+                        <p> {{ 'Empathetic' | uppercase }}</p>
+                        <p> {{ 'Curious' | uppercase }}</p>
+                        <p> {{ 'Patient' | uppercase }}</p>
+                    </div>
+                </div>
             </div>
         </mat-grid-tile>
 
@@ -14,11 +36,48 @@
         </mat-grid-tile>
 
         <mat-grid-tile [colspan]="1" [rowspan]="rowspanContacts" class="content-tile side-border">
-            About trainer
+            <div class="about">
+                <h4>{{ 'About' | uppercase }}</h4>
+                <p>{{this.trainerData?.name}} is a certified yoga trainer with over a decade of experience in guiding
+                    individuals towards physical well-being and mental clarity. The journey began as a personal quest to
+                    find balance in a fast-paced world, but soon evolved into a lifelong passion for teaching and
+                    healing.</p>
+                <p>The classes are known for their calming energy, mindful breathwork, and emphasis on proper alignment.
+                    Beyond physical postures, {{this.trainerData?.name}} encourages her students to embrace yoga as a
+                    holistic lifestyle—nurturing the body, mind, and spirit.</p>
+                <p>With a warm and approachable style, {{this.trainerData?.name}} creates a safe space where students
+                    feel supported and inspired. Whether you're a beginner or an advanced practitioner, the guidance
+                    helps cultivate strength, flexibility, and inner peace.</p>
+
+                <h4>{{ 'Known habits' | uppercase }}</h4>
+                <ul>
+                    <li>Minimalistic Lifestyle</li>
+                    <li>Gratitude Practice</li>
+                    <li>Mindful Eating</li>
+                </ul>
+            </div>
         </mat-grid-tile>
 
         <mat-grid-tile [colspan]="1" [rowspan]="rowspanContacts" class="content-tile next-border">
-            Personality
+            <div class="personality">
+                <h4>{{ 'Personality' | uppercase }}</h4>
+                <div *ngFor="let quality of this.trainerData?.personality">
+                    <div class="label">
+                        <p>{{ quality.start }}</p>
+                        <p>{{ quality.end }}</p>
+                    </div>
+                    <mat-slider class="progress">
+                        <input type="range" [(ngModel)]="quality.value" disabled matSliderThumb>
+                    </mat-slider>
+                </div>
+
+                <h4>{{ 'Goals' | uppercase }}</h4>
+                <ul>
+                    <li>Promote Holistic Well-being</li>
+                    <li>Create an Inclusive Yoga Community</li>
+                    <li>Inspire Mindfulness Beyond the Maty</li>
+                </ul>
+            </div>
         </mat-grid-tile>
     </mat-grid-list>
 </div>
