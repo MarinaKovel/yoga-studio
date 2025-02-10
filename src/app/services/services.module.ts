@@ -18,10 +18,9 @@ import { PoseListComponent } from './components/pose-list/pose-list.component';
 import { YogaSessionComponent } from './pages/yoga-session/yoga-session.component';
 import { MeditationSessionComponent } from './pages/meditation-session/meditation-session.component';
 import { YogaPoseTrackerComponent } from './pages/yoga-pose-tracker/yoga-pose-tracker.component';
-import { HomeComponent } from '../home/pages/home/home.component';
-import { HomeModule } from '../home/home.module';
 import { MatIcon } from '@angular/material/icon';
 import { ServiceCardComponent } from './components/service-card/service-card.component';
+import { CompletedComponent } from '../share/components/completed/completed.component';
 
 const routes: Routes = [
   { path: '', component: ServicesComponent },
@@ -41,7 +40,8 @@ const routes: Routes = [
     YogaSessionComponent,
     MeditationSessionComponent,
     YogaPoseTrackerComponent,
-    ServiceCardComponent
+    ServiceCardComponent,
+    
   ],
   imports: [
     CommonModule,
@@ -55,7 +55,8 @@ const routes: Routes = [
     MatInput,
     DifficultyLabelPipe,
     MatDividerModule,
-    MatIcon
+    MatIcon,
+    CompletedComponent
 ]
 })
 export class ServicesModule { }

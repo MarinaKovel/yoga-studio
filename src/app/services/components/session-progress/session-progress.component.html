@@ -5,4 +5,5 @@
 <div *ngIf="start" class="session">
     <app-progress-bar [poses]="poses"></app-progress-bar>
     <button *ngIf="showNext" mat-flat-button color="primary" (click)="increaseProgress()">Complete Pose</button>
+    <app-completed *ngIf="!showNext"></app-completed>
 </div>

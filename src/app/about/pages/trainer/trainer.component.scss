@@ -99,3 +99,14 @@ section {
 .left-column {
     height: 100% !important;
 }
+
+ul {
+    color: $dark;
+    list-style-type: none;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}

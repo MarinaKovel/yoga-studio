@@ -1,12 +1,15 @@
-<p *ngIf="!meditation">Even a short meditation helps to relax and clear the mind. Here you can do the 5-minutes breathing session and follow your progress. Press the button to start. Have a nice session!</p>
+<p *ngIf="!meditation">Even a short meditation helps to relax and clear the mind. Here you can do the 5-minutes
+    breathing session and follow your progress. Press the button to start. Have a nice session!</p>
 <button *ngIf="!meditation" mat-flat-button class="meditation-button" color="primary" (click)="startMeditation()">Start
     Meditation Session</button>
 
 <div *ngIf="meditation" class="progress-tracker">
     <h3 appBreathAnimation class="breathing">Let's start!</h3>
-    
+
     <div class="progress-bar">
         <div class="progress" [style.width.%]="progress"></div>
     </div>
     <p>{{ progress | number: '1.0-2' }}% completed</p>
+
+    <app-completed *ngIf="progress > 99"></app-completed>
 </div>

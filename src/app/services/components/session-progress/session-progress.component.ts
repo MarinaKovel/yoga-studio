@@ -46,8 +46,6 @@ export class SessionProgressComponent implements AfterViewInit, AfterViewChecked
   }
 
   increaseProgress() {
-    console.log(this.rate);
-    
     const increaseBy = this.poses[this.progressBar.currentPose].duration * this.rate;
     this.progressBar.increaseProgress(increaseBy);
 
@@ -55,6 +53,10 @@ export class SessionProgressComponent implements AfterViewInit, AfterViewChecked
       this.progressBar.currentPose++
     } else {
       this.showNext = false;
+      setTimeout(() => {
+        this.showNext = true;
+        this.start = false
+      }, 3000)
     }
   }
 

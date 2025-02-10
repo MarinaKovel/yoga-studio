@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { ShareModule } from '../../share.module';
+import { CompletedComponent } from '../completed/completed.component';
 
 @Component({
   selector: 'app-progress-tracker',
   standalone: true,
-  imports: [CommonModule, MatButton, ShareModule],
+  imports: [CommonModule, MatButton, ShareModule, CompletedComponent],
   templateUrl: './progress-tracker.component.html',
   styleUrl: './progress-tracker.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -39,6 +40,13 @@ export class ProgressTrackerComponent {
         this.progress = 100;
         this.breath = 3
         clearInterval(this.intervalId);
+
+        setTimeout(() => {
+          this.progress = 0;
+          this.breath = 1;
+          this.meditation = false;
+          this.cdr.detectChanges();
+        }, 3000)
       }
 
       // Manually trigger change detection

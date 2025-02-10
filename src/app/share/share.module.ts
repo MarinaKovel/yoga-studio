@@ -9,6 +9,7 @@ import { BookWidgetComponent } from './components/book-widget/book-widget.compon
 import { DifficultyLabelPipe } from './pipes/difficulty-label.pipe';
 import { ProgressTrackerComponent } from './components/progress-tracker/progress-tracker.component';
 import { BreathAnimationDirective } from './directives/breath-animation.directive';
+import { CompletedComponent } from './components/completed/completed.component';
 
 @NgModule({
   declarations: [BreathAnimationDirective],
@@ -22,6 +23,7 @@ import { BreathAnimationDirective } from './directives/breath-animation.directiv
     BookWidgetComponent,
     DifficultyLabelPipe,
     ProgressTrackerComponent,
+    CompletedComponent
   ],
   exports: [
     ContactButtonComponent, 

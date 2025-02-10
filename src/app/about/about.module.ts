@@ -11,6 +11,7 @@ import { AvailableTrainersComponent } from './components/available-trainers/avai
 import { MatSliderModule } from '@angular/material/slider';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIcon } from '@angular/material/icon';
 
 
 const routes: Routes = [
@@ -34,7 +35,8 @@ const routes: Routes = [
     MatGridTile,
     MatSliderModule,
     FormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIcon
   ]
 })
 export class AboutModule { }

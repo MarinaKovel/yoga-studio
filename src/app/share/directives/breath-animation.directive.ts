@@ -22,7 +22,7 @@ export class BreathAnimationDirective implements OnInit, OnDestroy {
   private initializeBreathAnimation(): void {
     const element = this.el.nativeElement;
 
-    this.renderer.setStyle(element, 'transition', `transform ${this.duration / 1000}s ease-in-out`);
+    this.renderer.setStyle(element, 'transition', `transform ${this.duration / 1200}s ease-in-out`);
     this.renderer.setStyle(element, 'width', '160px');
     this.renderer.setStyle(element, 'height', '160px');
 
