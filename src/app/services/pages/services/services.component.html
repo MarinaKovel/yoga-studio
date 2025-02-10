@@ -1,10 +1,23 @@
 <section>
     <h1>{{ 'Our services' | uppercase }}</h1>
 
-    <h2>Try Our Online Services:</h2>
+    <div class="cards-container">
+        <div *ngFor="let card of cards">
+            <app-service-card [icon]="card.icon" [title]="card.title" [text]="card.text"></app-service-card>
+        </div>
+    </div>
+
+    <h2>Try our Online Services:</h2>
+
     <nav>
-        <a routerLink="/services/meditation-session">Meditation Session</a>
-        <a routerLink="/services/yoga-session">Yoga Session</a>
-        <a routerLink="/services/yoga-pose-tracker">Yoga Pose Tracker</a>
+        <a routerLink="/services/meditation-session"><mat-icon>spa</mat-icon>Meditation Session</a>
+        <a routerLink="/services/yoga-session"><mat-icon>self_improvement</mat-icon>Yoga Session</a>
+        <a routerLink="/services/yoga-pose-tracker"><mat-icon>self_improvement</mat-icon>Yoga Pose Tracker</a>
+    </nav>
+
+    <h2>Choose one of our Classes or Book Online:</h2>
+    <nav>
+        <a routerLink="/classes"><mat-icon>list_alt</mat-icon>Classes</a>
+        <a routerLink="/booking"><mat-icon>bookmark</mat-icon>Book online</a>
     </nav>
 </section>

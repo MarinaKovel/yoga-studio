@@ -1,6 +1,5 @@
-import { Component, Input } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Router } from '@angular/router';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-service-card',
@@ -14,7 +13,7 @@ export class ServiceCardComponent {
 
   isTablet = false;
 
-  constructor(private breakpointService: BreakpointObserver, private router: Router) { }
+  constructor(private breakpointService: BreakpointObserver) { }
 
   ngOnInit() {
     this.breakpointService
@@ -26,9 +25,5 @@ export class ServiceCardComponent {
           this.isTablet = true;
         }
       })
-  }
-
-  redirectToServices() {
-    this.router.navigate(['/services'])
   }
 }

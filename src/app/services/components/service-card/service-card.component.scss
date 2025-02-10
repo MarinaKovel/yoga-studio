@@ -1,0 +1,32 @@
+@import '../../../../variables';
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 376px;
+    width: 200px;
+    background-color: $light;
+    border-radius: 25px;
+    padding: 35px;
+    border: 1px solid $green;
+
+    img {
+        max-width: 80px;
+        max-height: 80px;
+    } 
+}
+
+.tablet {
+    height: 251px;
+    width: 196px;
+    padding: 25px;
+    gap: 10px;
+
+    img {
+        max-width: 25px;
+        max-height: 25px;
+    }
+}

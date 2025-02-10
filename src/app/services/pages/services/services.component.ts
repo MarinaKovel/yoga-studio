@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CARDS_DATA } from '../../../share/constants';
 
 @Component({
   selector: 'app-services',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './services.component.scss'
 })
 export class ServicesComponent {
-
+  cards = CARDS_DATA;
 }
