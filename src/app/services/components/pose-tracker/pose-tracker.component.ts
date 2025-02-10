@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Pose } from '../../../interfaces/pose.interface';
+import { YogaPoseService } from '../../../share/services/yoga-pose.service';
 
 @Component({
   selector: 'app-pose-tracker',
@@ -15,10 +16,14 @@ export class PoseTrackerComponent {
   result: Pose[] = [];
   level: number = 1;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private yogaPoseService: YogaPoseService) {
     this.yogaForm = this.fb.group({
       poses: this.fb.array([]),
     });
+
+    this.yogaPoseService.getUser().subscribe(
+      (user) => this.level = user.level
+    )
   }
 
   get poses() {

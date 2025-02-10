@@ -1,4 +1,5 @@
- <button *ngIf="!start" mat-flat-button color="primary" class="start-session" (click)="startSession()">Start Yoga
+<p *ngIf="!start">Currently your level is <strong>{{ userLevel | difficultyLabel }}</strong>. Let's practise to enhace it. To start press the button below and do the suggested yoga pose during the proposed time. When finished press the button for the new pose. Have a nice session!</p>
+<button *ngIf="!start" mat-flat-button color="primary" class="start-session" (click)="startSession()">Start Yoga
     Session</button>
 
 <div *ngIf="start" class="session">

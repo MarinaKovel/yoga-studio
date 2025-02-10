@@ -1,14 +1,18 @@
-<h4>All poses:</h4>
-<ul>
-    <li *ngFor="let name of poseNames">{{name}}</li>
-</ul>
+<div>
+    <h4>All poses:</h4>
+    <ul>
+        <li *ngFor="let name of poseNames">{{name}}</li>
+    </ul>
+</div>
 
-<h4>Suggested to Beginners:</h4>
-<ul>
-    <li *ngFor="let pose of beginnerPoses">{{pose.name}}</li>
-</ul>
+<div>
+    <h4>Suggested to Beginners and for light start:</h4>
+    <ul>
+        <li *ngFor="let pose of beginnerPoses">{{pose.name}} - {{pose.duration}} min.</li>
+    </ul>
 
-<h4>Suggested to Your Level ({{ userPoses[0].level || 1 | difficultyLabel }}):</h4>
-<ul>
-    <li *ngFor="let pose of userPoses">{{pose.name}}</li>
-</ul>
+    <h4>Suggested to Your Level ({{ userPoses[0].level || 1 | difficultyLabel }}):</h4>
+    <ul>
+        <li *ngFor="let pose of userPoses">{{pose.name}} - {{pose.duration}} min.</li>
+    </ul>
+</div>

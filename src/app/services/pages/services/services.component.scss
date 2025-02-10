@@ -8,11 +8,21 @@ section {
     justify-content: center;
     color: $dark;
 
-    h2 {
-        margin-top: 48px;
-    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 35px;
+        margin-bottom: 100px;
 
-    mat-divider {
-        width: 90%;
+        a {
+            font-size: large;
+            color: $dark;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #{$dark}80;
+        }
     }
 }

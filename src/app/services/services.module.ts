@@ -15,11 +15,18 @@ import {MatDividerModule} from '@angular/material/divider';
 import { SessionProgressComponent } from './components/session-progress/session-progress.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { PoseListComponent } from './components/pose-list/pose-list.component';
+import { YogaSessionComponent } from './pages/yoga-session/yoga-session.component';
+import { MeditationSessionComponent } from './pages/meditation-session/meditation-session.component';
+import { YogaPoseTrackerComponent } from './pages/yoga-pose-tracker/yoga-pose-tracker.component';
+import { HomeComponent } from '../home/pages/home/home.component';
+import { HomeModule } from '../home/home.module';
 
-const routes: Routes = [{
-  path: '',
-  component: ServicesComponent
-}];
+const routes: Routes = [
+  { path: '', component: ServicesComponent },
+  { path: 'yoga-session', component: YogaSessionComponent },
+  { path: 'meditation-session', component: MeditationSessionComponent },
+  { path: 'yoga-pose-tracker', component: YogaPoseTrackerComponent },
+];
 
 @NgModule({
   declarations: [
@@ -28,7 +35,10 @@ const routes: Routes = [{
     MyLevelComponent, 
     SessionProgressComponent,
     ProgressBarComponent,
-    PoseListComponent
+    PoseListComponent,
+    YogaSessionComponent,
+    MeditationSessionComponent,
+    YogaPoseTrackerComponent
   ],
   imports: [
     CommonModule,
