@@ -1,28 +1,30 @@
 <div class="trainer-availability">
-    <h3>Check Trainer Availability</h3>
-  
-    <label for="trainer-select">Select a Trainer:</label>
-    <select id="trainer-select" (change)="selectTrainer($event)">
-      <option *ngFor="let trainer of trainers()" [value]="trainer.id">
-        {{ trainer.name }} - {{ trainer.class }}
-      </option>
-    </select>
-  
-    <label for="day-select">Select a Day:</label>
-    <select id="day-select" (change)="selectDay($event)">
-      <option *ngFor="let day of days; let i = index" [value]="i">
-        {{ day | date: "MMM, d" }}
-      </option>
-    </select>
-  
-    <div *ngIf="selectedTrainer() as trainer" class="result">
-        <h2>Available Slots for {{ trainer.name }}</h2>
-        <img [src]="trainer.avatar" [alt]="trainer.name" width="100" height="100" />
-      
-        <ul>
-          <li *ngFor="let slot of availableSlots()">
-            Time: {{ slot.time }} - Free Slots: {{ slot.freeSlots }}
-          </li>
-        </ul>
-      </div>
+  <h3>Check Trainer Availability</h3>
+
+  <label for="trainer-select">Select a Trainer:</label>
+  <select id="trainer-select" (change)="selectTrainer($event)">
+    <option *ngFor="let trainer of trainers()" [value]="trainer.id">
+      {{ trainer.name }} - {{ trainer.class }}
+    </option>
+  </select>
+
+  <label for="day-select">Select a Day:</label>
+  <select id="day-select" (change)="selectDay($event)">
+    <option *ngFor="let day of days; let i = index" [value]="i">
+      {{ day | date: "MMM, d" }}
+    </option>
+  </select>
+
+  <div *ngIf="selectedTrainer() as trainer" class="result">
+    <h2>Available Slots for {{ trainer.name }}</h2>
+    <img [src]="trainer.avatar" [alt]="trainer.name" width="100" height="100" />
+
+    <ul>
+      <li *ngFor="let slot of availableSlots()">
+        Time: {{ slot.time }} - Free Slots: {{ slot.freeSlots }}
+      </li>
+    </ul>
   </div>
+
+  <button mat-flat-button color="primary" (click)="bookService.redirectToBooking()"><img src="../../../../assets/cart.svg" alt="Shop" />Book Now</button>
+</div>

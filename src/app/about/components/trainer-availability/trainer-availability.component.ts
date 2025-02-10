@@ -2,6 +2,7 @@ import { Component, signal, computed } from '@angular/core';
 import { FetchDataService } from '../../../share/services/fetch-data.service';
 import { Trainer } from '../../../interfaces/trainer.interface';
 import { Router } from '@angular/router';
+import { BookService } from '../../../share/services/book.service';
 
 @Component({
   selector: 'app-trainer-availability',
@@ -28,7 +29,11 @@ export class TrainerAvailabilityComponent {
     return trainer.sessions[day] ?? [];
   });
 
-  constructor(private fetchDataService: FetchDataService, private router: Router) {
+  constructor(
+    private fetchDataService: FetchDataService, 
+    private router: Router,
+    public bookService: BookService
+  ) {
     this.fetchTrainers();
 
     const urlParts = this.router.url.split('/')

@@ -10,6 +10,7 @@ import { TrainerAvailabilityComponent } from './components/trainer-availability/
 import { AvailableTrainersComponent } from './components/available-trainers/available-trainers.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 
 
 const routes: Routes = [
@@ -33,6 +34,7 @@ const routes: Routes = [
     MatGridTile,
     MatSliderModule,
     FormsModule,
+    MatButtonModule
   ]
 })
 export class AboutModule { }
