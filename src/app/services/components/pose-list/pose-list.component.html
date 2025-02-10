@@ -8,7 +8,7 @@
     <li *ngFor="let pose of beginnerPoses">{{pose.name}}</li>
 </ul>
 
-<h4>Suggested to Your Level:</h4>
+<h4>Suggested to Your Level ({{ userPoses[0].level || 1 | difficultyLabel }}):</h4>
 <ul>
     <li *ngFor="let pose of userPoses">{{pose.name}}</li>
 </ul>

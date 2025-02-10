@@ -3,6 +3,6 @@ export interface Pose {
     name: string;
     duration: number;
     level?: number;
-    type?: 'Balance' | 'Strength',
+    type?: string,
     image?: string;
 }

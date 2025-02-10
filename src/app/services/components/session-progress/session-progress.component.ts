@@ -2,6 +2,7 @@ import { Component, AfterViewInit, AfterViewChecked, ViewChild } from '@angular/
 import { ProgressBarComponent } from '../progress-bar/progress-bar.component';
 import { Pose } from '../../../interfaces/pose.interface';
 import { FetchDataService } from '../../../share/services/fetch-data.service';
+import { YogaPoseService } from '../../../share/services/yoga-pose.service';
 
 @Component({
   selector: 'app-session-progress',
@@ -15,12 +16,21 @@ export class SessionProgressComponent implements AfterViewInit, AfterViewChecked
   poses: Pose[] = [];
   start: boolean = false;
   showNext: boolean = true;
+  userLevel: number = 1;
+  rate: number = 0;
 
-  constructor(private fetchDataService: FetchDataService) { }
+  constructor(private fetchDataService: FetchDataService, private yogaPoseService: YogaPoseService) { }
 
   ngOnInit() {
+    this.yogaPoseService.getUser().subscribe(
+      (user) => this.userLevel = user.level
+    )
+
     this.fetchDataService.fetchPoses().subscribe(
-      (poses) => this.poses = poses
+      (poses) => {
+        this.poses = poses.filter((pose: Pose) => pose.level === this.userLevel);
+        this.rate = 100 / this.poses.reduce((acc, curValue) => acc + curValue.duration, 0);
+      }
     )
   }
 
@@ -36,7 +46,9 @@ export class SessionProgressComponent implements AfterViewInit, AfterViewChecked
   }
 
   increaseProgress() {
-    const increaseBy = this.poses[this.progressBar.currentPose].duration * 10;
+    console.log(this.rate);
+    
+    const increaseBy = this.poses[this.progressBar.currentPose].duration * this.rate;
     this.progressBar.increaseProgress(increaseBy);
 
     if (this.progressBar.currentPose < this.poses.length - 1) {

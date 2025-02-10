@@ -3,7 +3,6 @@ import { EMPTY, forkJoin, from } from 'rxjs';
 import { catchError, map, switchMap } from 'rxjs/operators';
 import { FetchDataService } from './fetch-data.service';
 import { Pose } from '../../interfaces/pose.interface';
-import { Trainer } from '../../interfaces/trainer.interface';
 
 
 @Injectable({
@@ -24,6 +23,10 @@ export class YogaPoseService {
     return this.fetchDataService.fetchPoses().pipe(
       map(poses => poses.filter((pose: Pose) => pose.level === 1))
     );
+  }
+
+  getUser() {
+    return this.fetchDataService.fetchData(`/${this.userId}`);
   }
 
   getUserPreferredPoses() {

@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Pose } from '../../../interfaces/pose.interface';
-import { FetchDataService } from '../../../share/services/fetch-data.service';
+import { YogaPoseService } from '../../../share/services/yoga-pose.service';
+import { Trainer } from '../../../interfaces/trainer.interface';
 
 @Component({
   selector: 'app-progress-bar',
@@ -10,16 +11,7 @@ import { FetchDataService } from '../../../share/services/fetch-data.service';
 export class ProgressBarComponent {
   @Input() progress = 0;
   @Input() currentPose = 0;
-
-  poses: Pose[] = [];
-
-  constructor(private fetchDataService: FetchDataService) {}
-
-  ngOnInit() {
-    this.fetchDataService.fetchPoses().subscribe(
-      (poses) => this.poses = poses
-    )
-  }
+  @Input() poses: Pose[] = [];
 
   increaseProgress(amount: number) {
     this.progress = Math.min(this.progress + amount, 100);
